@@ -195,21 +195,18 @@ h3{
     padding: 0;
     list-style: none;
     margin-left: 450px;
-    margin-top: 300px
+    margin-top: 300px;
 }
 
 
-.footer-div{
-  background-image: linear-gradient(rgba(0,168,255, 0.3), rgba(26, 73, 97, 0.2));
-}
  /* style for responsivness */
 
- @media (max-width: 768px){
+ /* @media (max-width: 768px){
   .nav-item{
       text-align:left!important;  
-     }
+     } */
 
-  .navbar-toggler-icon{
+  /* .navbar-toggler-icon{
     position: relative;
     right: 200px;
     border: 1px solid white;
@@ -220,61 +217,45 @@ h3{
     border-color:transparent;
     z-index: -1;
   }
-  
+}
+   */
 
+footer {
+    position :fixed;
+    bottom :0px;
+    width :100%;
+    background:#303030;
+    font-size:24px;
+    
 }
 
-/* .gap {
-    margin-right: 10px
-} 
-
-.contact_icon ul li:first-child {
-    margin-left: 0px
-} 
-
-.facebook {
-    background: #2a66b3;
-    border: 1px solid #2a66b3
+/*  styling main-footer-content div */
+.main-footer-content{
+    display :flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
 }
-.social_icon2 ul li a i {
-  margin-right: 10px
-}
-
-.twitter {
-  background: #35bbec;
-  border: 1px solid #35bbec
+/*  creating space between social icons  */
+.social_link a span{
+    margin-top : 60px;
+    height :40px;
+    width : 40px;
+    color: white ;
 }
 
-.social_icon2 ul li a {
-  float: left;
-  border-radius: 4px;
-  line-height: 40px;
-  color: #fff;
-  height: 40px;
-  width: 110px;
-  text-align: center;
-  margin-bottom: 40px
+ 
+/* size is changing here for copy right note */
+.copyRight {
+    font-size : 14px;
+    color:white;
+}
+/* color is changing here for copy right text*/
+.copyRight span {
+    color :#50575e;
+   
 }
 
-.google {
-  background: #e55644;
-  border: 1px solid #e55644
-}
-
-.facebook:hover {
-  background: #082b58;
-  border: 1px solid #082b58
-}
-
-.twitter:hover {
-  background: #0f607e;
-  border: 1px solid #0f607e
-}
-
-.google:hover {
-  background: #a52a1b;
-  border: 1px solid #a52a1b
-} */
 
 
 
