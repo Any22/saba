@@ -4,98 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="heroimg.css">
     
     <title>Saba Akhtar</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <!-- Brand -->
-    <a class="navbar-brand" href="#">Saba Akhtar</a>
-  
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link" href="#intro">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#proj">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact_icon">Contact Me</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
-    <div class="hero-image">
-        <div class="hero-text">
-          <h1>I am Saba</h1>
-          <h3><span style="color:#838C95">I am a </span>Software Engineer<span style="color:#838C95" > based in </span>Victoria.</h3>
-            <h3>I am currently looking for a role of Frontend Web Designer and Developer.</h3>
-            
-          <p><a href ="mailto:sabasaeed1@gmail.com" target="_top" style="font-size:24px;color:white"> <i class="fa fa-google-plus "></i></a>
-            <a href ="https://www.github.com/Any22/" class="gap github" style="font-size:24px;color:white"><i class="fa fa-github"></i></a>
-            <a href ="https://www.linkedin.com/in/sabaakhtar/" class="gap linkedin" style="font-size:24px;color: white;"><i class="fa fa-linkedin-square"></i></a></p>
-        </div>
-    </div>
-   <!-- main container starts from here -->
-    <div class="main_container">
-      
-    <!-- introduction and pic will go here -->
-    <div id="introNpic">
-      <div id="introPic">
-          <img src="image/pic2.jpg" alt="hey">
+  <div class="heaDer">
+    <nav class="topnav">
+    <div class="container">
+        <a class="navbar-brand" href="#">Saba</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+          </label> 
+          <ul>
+            <li> <a class="active" href ="#">Home</a></li>  
+            <li> <a href ="#">About</a></li>  
+            <li> <a href ="#">Projects</a></li>
+            <li> <a href ="#">Contact</a></li>
+          </ul>
       </div>
-      <div id="intro">
+    </nav>
+  
+  <!-- text  -->
+  <div class="hero-text">
+    <h1>I am Saba</h1>
+    <h3><span style="color:#838C95">I am a </span>Software Engineer<span style="color:#838C95" > based in </span>Victoria.</h3>
+    <h3>I am a Frontend Web Designer and Developer.</h3>
+    <ul>
+          <li> <a href ="mailto:sabasaeed1@gmail.com" target="_top"><i class="fa fa-envelope "></i></a></li>  
+          <li> <a href ="https://www.github.com/Any22/"><i class="fa fa-github"></i></a> </li> 
+          <li> <a href ="https://www.linkedin.com/in/sabaakhtar/"><i class="fa fa-linkedin-square"></i></a></li>
+    </ul>
+  </div>
+  </div>      
+    <!-- header div ends here -->
+
+   <!-- main container starts from here -->
+      <!-- <div class="main_container"> -->
+      
+     <!-- introduction and pic will go here --> 
+    <div class="intropic" id="introNpic">
+      <!-- pic -->
+      <div class="intPic">
+          <img src="image/pic2.jpg" alt="hey" class="responsive" width="300" height="300">
+      </div> 
+      <!-- introduction -->
+      <div class="intro">
           <h2>About me</h2>
           <h3>My name is Saba Akhtar.</h3> 
-          <h3>I have hands on experience in HTML5, CSS, Bootstrap, JavaScript </h3>
+          <h3>I have hands on experience in <span>HTML5, CSS, Bootstrap, JavaScript,React.js</span></h3>
           <h3>and Agile Project Management (Scrum).</h3>
       </div>
     </div>
-     <!-- Qualifications details will be written here  -->
-    <div id="qualifications">
+     
+    <div class="proJect" id="proj">
+      <h3>Projects</h3>
+    </div>
+   
+      <!-- Qualifications details will be written here  --> 
+    <!-- <div id="qualifications">
       <div class="edu_details">
         <div class="etitle"></div>
         <div class="eContent"></div>
-      </div>
-
+      </div> -->
+<!-- 
     <div id="skills">
         <h2> Skills</h2>
-        <!-- html card -->
-        <div class="card1">
+         -->
+        <!-- <div class="card1">
           <div class="container1">
           <h4><b>HTML5</b></h4>
           </div>
           <img src="htm.jpg" alt="Avatar" style="width:100%">
-        </div>
+        </div> --> 
           <!-- css card -->
-        <div class="card2">
+        <!-- <div class="card2">
           <div class="container2">
           <h4><b>JavaScript</b></h4>
           </div>
-          <img src="cs3.jpg" alt="Avatar" style="width:100%">
-        </div>
+          <img src="image/cs3.jpg" alt="Avatar" style="width:100%">
+        </div> -->
 
            <!-- javascript card -->
-        <div class="card3">
+        <!-- <div class="card3">
           <div class="container3">
           <h4><b>CSS3</b></h4>
           </div>
           <img src="cs3.jpg" alt="Avatar" style="width:100%">  
-        </div>
+        </div> -->
 
            <!-- Bootstrap -->
-        <div class="card4">
+        <!-- <div class="card4">
             <div class="container4">
             <h4><b>Bootstrap</b></h4>
             </div>
@@ -105,16 +108,12 @@
     </div>
   </div>
 
-    <div id="proj">
-      <h3>Projects</h3>
-    </div>
-  </div>
-<!-- main container ends here -->
+   main container ends here -->
 
   <!-- footer starts here -->
-    
+  
 <footer>
-  <div class="main-footer-content">
+  <div class="main-footer-content" id="contactdetails">
     <div class="social_link" id="contact_icon">
     <a href ="mailto:sabasaeed1@gmail.com" target="_top"> <span class="fa fa-envelope "></span></a>
     <a href ="https://www.github.com/Any22/" ><span class="fa fa-github"></Span></a>
@@ -122,12 +121,11 @@
     </div>
     <br>
     <div class="copyRight">
-      <p><span>© Copyright 2020</span> Saba Akhtar </p>
+    <p><span>© Copyright 2020</span> Saba Akhtar </p>
     </div>
   </div>
 </footer>
   
- 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
