@@ -12,7 +12,7 @@
     <title>Saba Akhtar</title>
 </head>
 <body>
-  <div class="heaDer">
+  <div class="heaDer" id="wStart">
     <nav class="topnav">
     <div class="container">
         <a class="navbar-brand" href="#">Saba</a>
@@ -21,16 +21,16 @@
             <i class="fa fa-bars"></i>
           </label> 
           <ul>
-            <li> <a class="active" href ="#">Home</a></li>  
-            <li> <a href ="#">About</a></li>  
-            <li> <a href ="#">Projects</a></li>
-            <li> <a href ="#">Contact</a></li>
+            <li> <a class="active" href ="#wStart">Home</a></li>  
+            <li> <a href ="#introNpic">About</a></li>  
+            <li> <a href ="#proj">Projects</a></li>
+            <li> <a href ="#contactdetails">Contact</a></li>
           </ul>
       </div>
     </nav>
   
   <!-- text  -->
-  <div class="hero-text">
+  <div class="hero-text" id="hText">
     <h1>I am Saba</h1>
     <h3><span style="color:#838C95">I am a </span>Software Engineer<span style="color:#838C95" > based in </span>Victoria.</h3>
     <h3>I am a Frontend Web Designer and Developer.</h3>
@@ -46,26 +46,24 @@
   </div> 
   </div>     
     <!-- header div ends here -->
-
-   <!-- main container starts from here -->
-      <!-- <div class="main_container"> -->
-      
-     <!-- introduction and pic will go here --> 
+ 
+     
     <div class="intropic" id="introNpic">
-      <!-- pic -->
-      <div class="intPic">
-          <img src="image/pic2.jpg" alt="hey" class="responsive" width="300" height="300">
-      </div> 
-      <!-- introduction -->
-      <div class="intro">
-          <h2>About me</h2>
-          <h3>I am a versatile frontend web designer and developer.</h3> 
-          <h3>Hands on experience in<span>HTML5, CSS, Bootstrap, JavaScript,React.js</span></h3>
-          <h3>and Agile Project Management (Scrum).</h3>
-          <p>
-            Specialized in building <span>responsive </span>and user-friendly websites. I am <span>self-starter, proactive, a supportive team player, adaptable and have excellent communication skills</span>. I have spent my entire professional life in learning and teaching algorithms.
-          </p>
+
+      <div class= "imgCont">
+          <img class="img2" src="image/pic2.jpg" alt="mypic" width="210" height="200" >
       </div>
+
+      <div class="contentClass">
+        <h2>About me</h2>
+        <p>I am a versatile frontend web designer and developer.</p>
+          <p>Hands on experience in HTML5, CSS, Bootstrap, JavaScript,React.js <br> and have working experience of Agile Project Management methodoligies <br>more specifically Scrum.</p>
+         <p id="lshow">Specialized in building responsive and user-friendly websites.<br> I am self-starter, proactive, a supportive team player, adaptable and<br> have excellent communication skills. </p> 
+         <div class="mLbutn">
+         <button type="button" id="button2" class="btn btn-success">More/Less</button> 
+         </div>
+        </div>
+           
     </div>
      
     <div class="proJect" id="proj">
@@ -123,7 +121,7 @@
   <!-- footer starts here -->
   
 <footer>
-  <div class="main-footer-content" id="contactdetails">
+  <div class="main-footer-content" >
     <div class="social_link" id="contact_icon">
     <a href ="mailto:sabasaeed1@gmail.com" target="_top"> <span class="fa fa-envelope "></span></a>
     <a href ="https://www.github.com/Any22/" ><span class="fa fa-github"></Span></a>
@@ -139,7 +137,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    <script src="portfolio.js"></script>
    
 </body>
 </html>
