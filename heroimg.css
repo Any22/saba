@@ -208,7 +208,8 @@ h3{
   #button2{
   background-color: navy;             /* Fallback color */
   background-color: rgba(0, 0, 0, 0.5); 
-  border: none;
+  border: thin;
+  border-color: navy;
   color:white;
   padding: 10px 20px;
   text-align: center;
@@ -452,5 +453,12 @@ footer {
 /* color is changing here for copy right text*/
 .copyRight span {
     color :#50575e;
+    
    
 }
+.copyRight p{
+  
+  text-align: center;
+ 
+}
+
