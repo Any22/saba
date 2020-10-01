@@ -1,18 +1,4 @@
-/* body, html {
-    height: 100%;
-    font-weight: 400;
-    scroll-behavior: smooth;
-  }
-*{
-  margin:0;
-  padding:0;
-  width:100%;
-  padding: 0;
-  list-style: none;
-  box-sizing: border-box;
-  text-decoration: none; 
-  font-family: 'Poppins', sans-serif; 
-} */
+
 body,html{
   height:100%;
   width:100%;
@@ -31,7 +17,7 @@ body,html{
   position:relative; 
   background-image: url('image/portfoli.jpg'); 
   width:100%;
-   width: 100vw;
+  width: 100vw;
   min-height: 480px; 
   /* Center and scale the image nicely */ 
   background-position: center;
@@ -138,13 +124,13 @@ h2 {
 color: white;
 font-size: 22px;
 }
-h1{
+/* h1{
   font-size: 46px;
 }
-
+*/
 h3{
-  font-size: 26px;
-}
+  font-weight: normal;
+} 
 /* Place text in the middle of the image */
 .hero-text {
    /* position:absolute;   */
@@ -153,7 +139,7 @@ h3{
     margin:80px 180px;
     width: 70%;                             
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     background: rgb(0, 0, 0);             /* Fallback color */
     background: rgba(0, 0, 0, 0.5);      /*Black background with 0.5 opacity */  
     color: #f1f1f1;                      /* Grey text */
@@ -379,6 +365,7 @@ p
       font-size:30px;
       padding-left:40px;
   }
+  
   .container ul li a {
       font-size: 18px;
       list-style: none;
@@ -412,6 +399,10 @@ p
   a.active ,a:hoover{
       background:none;
       color:lightblue;
+  }
+  .hero-text {
+    margin : 80px 90px;
+    padding: 50px;
   }
   #check:checked ~ ul{
       left :0;
