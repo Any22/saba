@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstraplogin</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prac3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Adding color to login part -->
+  
+  <div class="p-3 mb-2 bg-primary text-white">
+   <!-- main container  -->
+   
+    <div class="container" >
+        <h1>Log in/Sign up</h1>  
+        <!-- horizontal form starts from here -->
+        <form class="form-horizontal" action="/action_page.php">
+          <div class="form-group" >
+            <!-- inpute text for first name -->
+            <label class="control-label col-sm-2" for="fname">User name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="fname" placeholder="User name" name="fname">
+            </div>
+            <!-- input text for last name -->
+            <label class="control-label col-sm-2" for="Lname">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="lname" placeholder="Password" name="lname">
+            </div>
+
+          </div>
+                
+            <div class="form-group">        
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-success">Log In</button>
+                <button type="button" class="btn btn-success">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        </div>
+        
+   
+
+      
+    
+</body>
+</html>
