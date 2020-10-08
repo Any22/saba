@@ -179,7 +179,18 @@ h3{
     align-items: center; 
      
  } 
- 
+ .hero-text span ul li{
+   display: inline-block;
+   font-size: 25px;
+   list-style: none;
+   margin: 0px 3px;
+   padding :23px;
+   
+ }
+ .hero-text span ul li a{
+   color:white;
+ }
+
   .contentClass
   {
     flex:1;
