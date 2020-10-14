@@ -1,0 +1,185 @@
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("planner.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#taskcontainer{
+    display:flex ;
+    flex-direction:column;
+    
+}
+#cList {
+    position:absoulte;
+    width:18% ;
+    height:20%;
+    box-shadow: 10px 10px 5px 0px rgba(238, 238, 238, 1);
+    margin: 25px;
+    text-align: center;
+    /* padding: 30px; */
+    /* padding-right: 20px; */
+    }
+  
+.Edit{
+    position:absolute;
+    top:140px;
+    right:5px;
+    width: 30px;
+    background-color:lightgrey;
+    border:grey;
+}
+.delete{
+    position:absolute;
+    top:170px;
+    right:5px;
+    width: 30px;
+    background-color:lightgrey;
+    border:grey;
+    
+}
+
+.heading{
+    font-size: 20px;
+}
+
+ #btn1 
+ {
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color:lightgrey;
+    border:lightgrey;
+    width: 80px ;
+ } 
+ #addButton 
+ {
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color:lightgrey;
+    border:lightgrey;
+    width: 80px ;
+ } 
+ .btngrp{
+     display: flex;
+     flex-direction: row;
+ }
+ #addTask
+ {
+    margin-top:20px ;
+    margin-left: 100px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color:#E1AD01;
+    border:#E1AD01;
+    width: 180px ;
+    height:35px;
+    padding:10px ;
+    font-size:15px ;
+     
+ } 
+ #addTask:hover{
+    border: rgba(255,255,255,1);
+    }
+
+ #allTasks
+ {
+    margin-top:20px ;
+    margin-left: 380px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color:#E1AD01;
+    border:#E1AD01;
+    width: 180px ;
+    height:35px;
+    padding:10px ;
+    font-size:15px ;
+ }
+
+ @media screen and (min-width: 601px) {
+    #allTasks {
+      margin-left:50px ;
+    }
+    #addTask{
+        margin-left:30px;
+    }
+    /* #cList{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; 
+    } */
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    #allTasks {
+      margin-left: 30px;
+    }
+    #addTask{
+        margin-left:10px;
+    }
+    /* #cList{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; 
+        } */
+  }
+ 
+ footer {
+    position :relative;
+    bottom :0px;
+    width :100%;
+    width:100vw;
+    background:black;
+    font-size:24px;
+    height: 100px;
+    
+}
+
+/*  styling main-footer-content div */
+.main-footer-content{
+    display :flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+}
+ /*  creating space between social icons  */
+.social_link a span{
+    margin-top : 20px;
+    height :40px;
+    width : 40px;
+    color: white ;
+}
+
+/* size is changing here for copy right note */
+.copyRight {
+    font-size : 14px;
+    color:white;
+}
+/* color is changing here for copy right text*/
+.copyRight span {
+    color :#50575e;
+   
+}

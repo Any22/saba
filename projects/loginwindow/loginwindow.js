@@ -1,4 +1,4 @@
-let users= [
+const users= [
     {
         "username":"demo",
         "pswd":"1234"
@@ -18,11 +18,17 @@ let users= [
  login_button.onclick=function()
  {
           users.forEach(function (user,index) {
-           if ((user.username === userName.value) && (user.pswd === paswrd.value)){
+            // alert(users.user.username[index]);
+            // alert(index);
+           if ((userName.value === users[index].username) && ( paswrd.value === users[index].pswd)){
           alert("logged in!!");
-           }
+          // break;
+           } else {
+            alert (message);
+        }
+        return false;
      });
-      return (alert(message));
+      return false;
      }
 
 
