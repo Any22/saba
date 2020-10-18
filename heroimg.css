@@ -1,4 +1,6 @@
-
+*{
+  box-sizing: border-box;
+}
 body,html{
   height:100%;
   width:100%;
@@ -163,22 +165,48 @@ h3{
 .intropic
 {
   display:flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width:100%;
+  flex-direction:row;
+  /* width:100%; */
   width:100vw;
   background-color:#2b2b2b; 
   color: #7A7A7A;
 }
     
   .imgCont{
-    display: flex;
-    flex: 1;
+    
+    flex: 1;  
     padding: 16px;
-    justify-content: center;
-    align-items: center; 
-     
- } 
+    /* border: 5px solid red;    */
+ }
+/* to put the image on center */
+ .center {
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ 
+ .contentClass 
+ {
+    padding:16px; 
+    /* border: 5px solid red; */
+ }
+ .contentClass h2{
+   margin:40px;
+ }
+ .contentClass p
+{
+ /* text-align: justify; */
+ margin:40px;
+}
+
+.mLbutn{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ }
  .hero-text span ul li{
    display: inline-block;
    font-size: 25px;
@@ -191,18 +219,7 @@ h3{
    color:white;
  }
 
-  .contentClass 
-  {
-    flex:1;
-    padding:16px;
-    
-  }
-
- .mLbutn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
+ 
   #button2{
   background-color: navy;             /* Fallback color */
   background-color: rgba(0, 0, 0, 0.5); 
@@ -218,14 +235,7 @@ h3{
   border-radius: 26px;
   }
   
-  .contentClass h2{
-    margin:40px;
-  }
-  .contentClass p
-{
-  text-align: justify;
-  margin:40px;
-}
+ 
    .proJect
   {
     display: flex;
@@ -239,7 +249,7 @@ h3{
     padding: 0px 4px;
     height:380px; 
   } 
-  .proJect h3
+  .proJect h2
   {
   color:white;
   background-color:rgba(0,0,0);             /* Fallback color */
@@ -247,7 +257,7 @@ h3{
   padding:20px;
   width:100%;
   width:100vw;
-  margin:0px 40px;
+  margin: 0px 40px;
   }
   /* project images */
   .column {
@@ -280,6 +290,10 @@ h3{
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+  .intropic{
+  display:flex;
+  flex-direction:column;
   }
 }
   /*#skills{
@@ -405,7 +419,7 @@ h3{
 
 } */
 
-@media (max-width:952px)
+@media screen and (max-width:952px)
 {
 .navbar-brand{
       font-size:30px;
@@ -418,7 +432,7 @@ h3{
   }
 }
 
-@media (max-width:858px)
+@media screen and (max-width:858px)
 {
   .checkbtn{
       display: block;
@@ -426,7 +440,7 @@ h3{
   ul{
       position:fixed;
       width:35%;
-      height:40vh;
+      height:140vh;
       background:black ;
        top:0px; 
       left:-50%;
@@ -442,7 +456,7 @@ h3{
   .container ul li a{
       font-size: 16px;
       padding:20px;
-      margin-right:30px;
+      margin-right:50px;
   }
   a.active ,a:hoover{
       background:none;
