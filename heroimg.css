@@ -96,7 +96,10 @@ transition: .5s ;
   color:white;
   float:right;
   line-height: 80px;
-  margin-right:40px;
+  margin-right:10px;
+  /* border: solid gainsboro;
+  border-radius: 10px; */
+  
   cursor : pointer;
   display:none;
 }  
@@ -137,7 +140,7 @@ h3{
    /* position:absolute;   */
     display: flex;
     flex-direction: column; 
-    margin:80px 180px;
+    margin:80px 190px;
     width: 70%;                             
     text-align: center;
     padding: 50px;
@@ -145,7 +148,7 @@ h3{
     background: rgba(0, 0, 0, 0.5);      /*Black background with 0.5 opacity */  
     color: #f1f1f1;                      /* Grey text */
     color: white; 
-    height: 320px;
+    height: 340px;
     border-radius: 10px;
   } 
   .iCon ul 
@@ -211,12 +214,13 @@ h3{
    display: inline-block;
    font-size: 25px;
    list-style: none;
-   margin: 0px 3px;
-   padding :23px;
+   /* margin: 0px 13px; */
+   padding :20px; 
    
  }
  .hero-text span ul li a{
    color:white;
+   padding:25px
  }
 
  
@@ -259,6 +263,11 @@ h3{
   width:100vw;
   margin: 0px 40px;
   }
+  .proJect h3{
+    padding : 20px;
+    font-size: 16px;
+    color:grey
+  }
   /* project images */
   .column {
     flex: 25%;
@@ -284,7 +293,17 @@ h3{
     z-index: 110px;
   }
 }
-
+@media only screen and (min-width: 600px) {
+  .hero-text {
+    padding: 50px;
+  }
+  .hero-text h1{
+    font-size: 18px;
+}
+.hero-text h3{
+  font-size: 16px;
+}
+}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
@@ -439,32 +458,30 @@ h3{
   }
   ul{
       position:fixed;
-      width:35%;
+      width:40%;
       height:140vh;
       background:black ;
        top:0px; 
       left:-50%;
-      text-align:center;
+      /* text-align:center; */
       transition: all .3s;
   }
   .container ul li {
       display :block;
      overflow: hidden; 
-      margin: 25px 0px;
+      margin: 40px 5px;
       line-height:30px;
   }
   .container ul li a{
       font-size: 16px;
-      padding:20px;
-      margin-right:50px;
   }
   a.active ,a:hoover{
       background:none;
       color:lightblue;
   }
   .hero-text {
-    margin : 80px 90px;
-    padding: 50px;
+    margin : 80px 90px; 
+    /* padding: 50px; */
   }
   #check:checked ~ ul{
       left :0;
