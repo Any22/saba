@@ -20,15 +20,19 @@
         <label for="check" class="checkbtn">
             <i class="fa fa-bars"></i>
           </label> 
-          <ul>
-            <li> <a class="active" href ="#wStart"><i class="fa fa-home"></i> Home</a></li>  
-            <li> <a href ="#introNpic"><i class="fa fa-question-circle"></i>  About</a></li>  
-            <li> <a href ="#proj"><i class="fa fa-tasks"></i> Projects</a></li>
-            <li> <a href ="#hText"><i class="fa fa-envelope"></i> Contact</a></li>
+          
+          <ul id="nvbar">
+          
+            <li> <a class="active" href ="#wStart"  ><i class="fa fa-home"></i> HOME</a></li>  
+            <li> <a href ="#introNpic" ><i class="fa fa-question-circle"></i> ABOUT</a></li>  
+            <li> <a href ="#proj" ><i class="fa fa-tasks"></i> PROJECTS</a></li>
+            <li> <a href ="#hText"><i class="fa fa-phone"></i> CONTACTS</a></li>
           </ul>
+          
       </div>
     </nav>
-  
+    <!-- centering a div -->
+  <!-- https://blog.hubspot.com/website/center-div-css#:~:text=To%20center%20a%20div%20horizontally%20on%20a%20page%2C%20simply%20set,equally%20between%20the%20two%20margins. -->
   <!-- text  -->
   <div class="hero-text" id="hText">
     <h1 style="font-size:4vw;">I am Saba</h1>
@@ -40,14 +44,7 @@
         <li> <a href ="https://www.github.com/Any22/"><i class="fa fa-github"></i></a> </li> 
         <li> <a href ="https://www.linkedin.com/in/sabaakhtar/"><i class="fa fa-linkedin-square"></i></a></li>
   </ul>
-    </span>
-    <!-- <div class="iCon">
-    <ul>
-          <li> <a href ="mailto:sabasaeed1@gmail.com" target="_top"><i class="fa fa-envelope "></i></a></li>  
-          <li> <a href ="https://www.github.com/Any22/"><i class="fa fa-github"></i></a> </li> 
-          <li> <a href ="https://www.linkedin.com/in/sabaakhtar/"><i class="fa fa-linkedin-square"></i></a></li>
-    </ul>
-    </div> -->
+     </span>
   </div> 
   </div>     
     <!-- header div ends here -->
@@ -67,33 +64,160 @@
       <!-- image div  -->
       <div class= "imgCont">
         <!-- class="img2" -->
-          <img  src="image/pic2.jpg" alt="mypic" class="center" width="210" height="200" >
+          <img  src="image/pic2.jpg" alt="mypic" class="center" width="350" height="200" >
       </div>
            
     </div>
      <!-- about me ends here  -->
-    <div class="proJect" id="proj">
-      <h2>Project Gallery</h2>
-      <h3>React & API</h3>
-      <div class="column">
-        <a href="projects/loginwindow.html">
-        <img src="image/recipe.jpg" alt="recipe" ></a>
-        </div>
-        <h3>JavaScript</h3>
-        <div class="column">
-          <a href="projects/planmyday/taskplanner.html">
-          <img src="image/taskplanner.jpg" alt="tplanner"></a>
-        </div>
+     <!-- skills start here -->
+     <!-- <div class="skills">
+       
+    <div class="flex-container">
+      <div class="slideshow-container">
+  
+          Full-width images with number and caption text -->
+          <!-- <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="image/html.jpg" style="width:100%">
+            <div class="text">PS 4 Pro</div>
+          </div>
         
-        <div class="column">
-        <a href="projects/melbourne/city.html">
-        <img src="image/melbourne.jpg" alt="Melbourne"></a>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="image/cs3.jpg" style="width:100%">
+            <div class="text">PS 4 Pro</div>
+          </div>
+          <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="image/javascript.jpg" style="width:100%">
+              <div class="text">Paw Patrol</div>
+            </div>
+            <div class="container">  
+            <div class="content">
+              <h1>PS 4 Pr0</h1>
+            </div>
+            </div> -->
+  
+          <!-- Next and previous buttons -->
+          
+          <!-- <div class="btn" >
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+           <div style="text-align:center"> 
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          </div>
         </div>
+       </div>
+       <h2> Skills</h2> 
+      <div class="card1">
+        <div class="container1">
+        <h4><b>HTML5</b></h4>
+        </div>
+        <img src="image/html.jpg" alt="Avatar" style="width:100%">
+      </div> 
+         css card -->
+       <!-- <div class="card2">
+        <div class="container2">
+        <h4><b>CSS3</b></h4>
+        </div>
+        <img src="image/cs3.jpg" alt="Avatar" style="width:100%">
+      </div> 
+        -->
+           <!-- javascript card -->
+        <!-- <div class="card3">
+          <div class="container3">
+          <h4><b>CSS3</b></h4>
+          </div>
+          <img src="image/javascript.jpg" alt="Avatar" style="width:100%">  
+        </div>  -->
+
+           <!-- Bootstrap -->
+         <!-- <div class="card4">
+            <div class="container4">
+            <h4><b>Bootstrap</b></h4>
+            </div>
+            <img src="boots.jpg" alt="Avatar" style="width:100%"> 
+        </div>
+
+    </div>
+    -->
+     
+     <div class="proJect" id="proj">
+      <h2>Project Gallery</h2>
+      <div class="cardcontainer">
+        <div class="card-deck">
+            <div class="card mb-4">
+                <img class="card-img-top img-fluid" src="image/taskplanner.jpg" alt="Card image cap" width="500" height="280">
+                <div class="card-body">
+                    <h4 class="card-title">Plan your day</h4>
+                    <p class="card-text">This Website helps you to organize your daily routine by maintaining your "To-do","In progress","Done" and "Review" tasks.<br>Build with HTML5,CSS3,JavScript and Web storage.</p>
+                    <a href="https://github.com/Any22/saba-akhtar.github.io/tree/master/projects/planmyday"><small class="text-muted">GitHub link</small></a></p>
+                    <a href="projects/planmyday/taskplanner.html" class="btn btn-primary">See Project</a>
+                </div>
+            </div>
+            <div class="card mb-4">
+              <img class="card-img-top img-fluid" src="image/calculator.jpg" alt="calculator" width="500" height="280">
+              <div class="card-body">
+                  <h4 class="card-title">Calculator</h4>
+                  <p class="card-text">This is a simple calculator which works perfectly on 15-digits(max).It is perfect for your simple day to day calculations.<br>Build with HTML5,CSS3 and JavaScript. </p>
+                  <a href="https://github.com/Any22/calculator.github"><small class="text-muted">GitHub link</small></a></p>
+                  <a href="https://any22.github.io/calc.html" class="btn btn-primary">See Project</a>
+              </div> 
+          </div> 
+            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+            <div class="card mb-4">
+              <img class="card-img-top img-fluid" src="image/recipe.jpg" alt="Card image cap" width="500" height="200">
+              <div class="card-body">
+                  <h4 class="card-title">Meal Today</h4>
+                  <p class="card-text">What to cook today? This question bother us all on daily basis."Meal Today" is a perfect solution to find out delicious recipes ,just enter the main ingredient like ,chicken ,potatoes or pasta and tada....! The awesome recipes will be available to you within no time.<br>Build with HTML5,CSS3 Javascript and API integration.</p>
+                  <a href="https://github.com/Any22/React-apps"><small class="text-muted">GitHub link</small></a></p>
+                  <a href="projects/recipe/recipeapp/public/index.html" class="btn btn-primary">See Project</a>
+              </div>
+          </div>
+
+             <div class="w-100 d-none d-md-block d-lg-none">wrap every 3 on md</div>
+             <div class="card mb-4">
+              <img class="card-img-top img-fluid" src="image/melbourne.jpg" alt="Card image cap" width="500" height="280">
+              <div class="card-body">
+                  <h4 class="card-title">Favorite City</h4>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <a href="https://github.com/Any22/saba-akhtar.github.io/tree/master/projects/melbourne"><small class="text-muted">GitHub link</small></a></p>
+                  /<a href="projects/melbourne/city.html" class="btn btn-primary">See Project</a>
+              </div>
+          </div>
+          
+        </div>
+    </div> 
+     </div>
+      <!-- <div class="prTitle">   -->
+      <!-- <h3 class="react_proj">React</h3> -->
+      <!-- <div class="column"> -->
+        <!-- <a href="projects/loginwindow.html">
+        <img class="react_img" src="image/recipe.jpg" alt="recipe" width="350" height="200" ></a>
+        </div> -->
+        <!-- <h3 class="java_proj">JavaScript</h3> -->
+        <!-- <div class="column"> -->
+          <!-- <div class="prTitle"> 
+          <a href="projects/planmyday/taskplanner.html">
+          <img class="java_img" src="image/taskplanner.jpg" alt="tplanner" width="350" height="200"></a>
+        </div> -->
+        <!-- <h3 class="static_proj">Static websites</h3> -->
+        <!-- <div class="prTitle">  -->
+        <!-- <div class="column"> -->
+        <!-- <a href="projects/melbourne/city.html">
+        <img class="static_img" src="image/melbourne.jpg" alt="Melbourne" width="350" height="200"></a>
+        </div>
+      </div> -->
         <!-- <div class="column">
           <a href="projects/loginwindow.html">
           <img src="image/login.jpg" alt="tplanner" ></a>
           </div> -->
-    </div>
+    <!-- </div> -->
     <!-- https://www.geeksforgeeks.org/how-to-design-responsive-card-deck-with-fixed-width-in-bootstrap/ -->
    
       <!-- Qualifications details will be written here  --> 
@@ -102,47 +226,15 @@
         <div class="etitle"></div>
         <div class="eContent"></div>
       </div> -->
-<!-- 
-    <div id="skills">
-        <h2> Skills</h2>
-         -->
-        <!-- <div class="card1">
-          <div class="container1">
-          <h4><b>HTML5</b></h4>
-          </div>
-          <img src="htm.jpg" alt="Avatar" style="width:100%">
-        </div> --> 
-          <!-- css card -->
-        <!-- <div class="card2">
-          <div class="container2">
-          <h4><b>JavaScript</b></h4>
-          </div>
-          <img src="image/cs3.jpg" alt="Avatar" style="width:100%">
-        </div> -->
 
-           <!-- javascript card -->
-        <!-- <div class="card3">
-          <div class="container3">
-          <h4><b>CSS3</b></h4>
-          </div>
-          <img src="cs3.jpg" alt="Avatar" style="width:100%">  
-        </div> -->
+   
+         
+         <!--  -->
 
-           <!-- Bootstrap -->
-        <!-- <div class="card4">
-            <div class="container4">
-            <h4><b>Bootstrap</b></h4>
-            </div>
-            <img src="boots.jpg" alt="Avatar" style="width:100%"> 
-        </div>
+   <!-- main container ends here  -->
 
-    </div>
-  </div>
+<!-- footer starts here  -->
 
-   main container ends here -->
-
-  <!-- footer starts here -->
-  
 <footer>
   <div class="main-footer-content" >
     <div class="social_link" id="contact_icon">
