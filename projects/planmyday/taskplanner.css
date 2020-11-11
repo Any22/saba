@@ -137,20 +137,31 @@ body, html {
 
  @media screen and (min-width: 200px) {
     #allTasks {
-      margin-right:30px ; 
+      margin-right:20px; 
       width:120px;
       font-size:12px;
     }
     #addTask{
         width:120px;
         font-size:12px;
-        margin-right:28px; 
+        margin-right:30px; 
     }
-     #main-container{
+     
+    #main-container{
      display: flex;
      flex-direction: row;
      flex-wrap: nowrap; 
     } 
+    #taskcontainer {
+        position:relative;
+        width:75vw ;
+        height:20%;
+        box-shadow: 10px 10px 5px 0px rgba(238, 238, 238, 1);
+        margin: 25px;
+        text-align: center;
+        /* padding: 30px; */
+        /* padding-right: 20px; */
+        }
   }
   
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -166,6 +177,16 @@ body, html {
         flex-direction: row;
          flex-wrap: wrap; 
         } 
+        #taskcontainer {
+            position:relative;
+            width:50vw ;
+            height:20%;
+            box-shadow: 10px 10px 5px 0px rgba(238, 238, 238, 1);
+            margin: 25px;
+            text-align: center;
+            /* padding: 30px; */
+            /* padding-right: 20px; */
+            }
   }
  .footer-div{
      position:relative;
