@@ -1,2 +1,2 @@
  
-I am working on my portfolio and my plan is work on responsive web page design .
+I am working on my portfolio and my plan is to work on responsive web page design .
