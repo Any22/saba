@@ -1,8 +1,14 @@
 body, html {
+    box-sizing: border-box;
     height: 100%;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* .container{ */
+    /* position:relative ; */
+    /* text-align: center; */
 
+/* } */
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -22,19 +28,23 @@ body, html {
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 50%;
+   top: 70%; 
   left: 50%;
+  
   transform: translate(-50%, -50%);
   color: white;
 }
 
-#taskcontainer{
+#main-container{
     display:flex ;
     flex-direction:column;
-    
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+   
 }
-#cList {
-    position:absoulte;
+#taskcontainer {
+    position:relative;
     width:18% ;
     height:20%;
     box-shadow: 10px 10px 5px 0px rgba(238, 238, 238, 1);
@@ -85,18 +95,24 @@ body, html {
  .btngrp{
      display: flex;
      flex-direction: row;
+     justify-content: center;
+     align-content: center;
  }
  #addTask
  {
-    margin-top:20px ;
-    margin-left: 100px;
+    margin-top:110px ;
+    margin-left: 400px;
     border-radius: 16px;
+    color: grey;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color:#E1AD01;
-    border:#E1AD01;
+    background-color:white;
+    border:#E1AD01 solid 3px;
     width: 180px ;
     height:35px;
-    padding:10px ;
+    text-align: center;
+    justify-content: center;
+    line-height: 15px; 
+    /* padding:10px 20px; */
     font-size:15px ;
      
  } 
@@ -106,7 +122,7 @@ body, html {
 
  #allTasks
  {
-    margin-top:20px ;
+    margin-top:110px ;
     margin-left: 380px;
     border-radius: 16px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -114,7 +130,7 @@ body, html {
     border:#E1AD01;
     width: 180px ;
     height:35px;
-    padding:10px ;
+    padding:10px 20px;
     font-size:15px ;
  }
 
@@ -146,15 +162,17 @@ body, html {
         /* flex-wrap: wrap; 
         } */
   }
- 
+ .footer-div{
+     position:relative;
+ }
  footer {
-    position :relative;
+    position :fixed;
     bottom :0px;
     width :100%;
     width:100vw;
     background:black;
     font-size:24px;
-    height: 100px;
+    height: 40px;
     
 }
 
@@ -175,6 +193,10 @@ body, html {
 
 /* size is changing here for copy right note */
 .copyRight {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    margin-top:10px;
     font-size : 14px;
     color:white;
 }
