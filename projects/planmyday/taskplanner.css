@@ -97,23 +97,24 @@ body, html {
      flex-direction: row;
      justify-content: center;
      align-content: center;
- }
+     margin-left:30px;
+ } 
  #addTask
  {
-    margin-top:110px ;
-    margin-left: 400px;
+    margin-top:60px ;
+    /* margin-right: 200px; */
     border-radius: 16px;
-    color: grey;
+    color: rgb(43, 41, 41);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color:white;
     border:#E1AD01 solid 3px;
-    width: 180px ;
+    width: 150px ;
     height:35px;
     text-align: center;
     justify-content: center;
     line-height: 15px; 
     /* padding:10px 20px; */
-    font-size:15px ;
+    font-size:14px ;
      
  } 
  #addTask:hover{
@@ -122,30 +123,34 @@ body, html {
 
  #allTasks
  {
-    margin-top:110px ;
-    margin-left: 380px;
+    margin-top:60px ;
+    /* margin-left: 100px; */
     border-radius: 16px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color:#E1AD01;
-    border:#E1AD01;
-    width: 180px ;
+    border:white solid 3px;
+    width: 150px ;
     height:35px;
-    padding:10px 20px;
-    font-size:15px ;
+    /* padding:10px 20px; */
+    font-size:14px ;
  }
 
- @media screen and (min-width: 601px) {
+ @media screen and (min-width: 200px) {
     #allTasks {
-      margin-left:50px ;
+      margin-right:30px ; 
+      width:120px;
+      font-size:12px;
     }
     #addTask{
-        margin-left:30px;
+        width:120px;
+        font-size:12px;
+        margin-right:28px; 
     }
-    /* #cList{
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; 
-    } */
+     #main-container{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap; 
+    } 
   }
   
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -156,11 +161,11 @@ body, html {
     #addTask{
         margin-left:10px;
     }
-    /* #cList{
+    #main-container{
         display: flex;
         flex-direction: row;
-        /* flex-wrap: wrap; 
-        } */
+         flex-wrap: wrap; 
+        } 
   }
  .footer-div{
      position:relative;
