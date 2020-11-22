@@ -2,8 +2,8 @@
 //     //  document.getElementById("nvbar").style.width = "0";
 //     // $("#nvbar").toggle();
 //   }
-let button2=document.querySelector("#button2");
-button2.onclick = function(){
+let button1=document.querySelector("#button1");
+button1.onclick = function(){
      
  $("#lshow").toggle();
 
