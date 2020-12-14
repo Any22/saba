@@ -9,32 +9,35 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="heroimg.css">
     <!-- https://www.youtube.com/watch?v=U9T6YkEDkMo -->
+    <!-- https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ -->
     <title>Saba Akhtar</title>
 </head>
 <body>
   <div class="heaDer" id="wStart">
-    <nav class="topnav">
+    <!-- <nav class="topnav">
     <div class="container">
         <a class="navbar-brand" href="#"></a>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
+            <div class="menu_btn">
+            <div class="menu_burger_btn"></div>
+            </div>
           </label> 
           <ul id="nvbar">
-            <li> <a class="active" href ="#wStart"  ><i class="fa fa-home"></i></a></li>  
+            <li> <a class="active" href ="#wStart" ><i class="fa fa-home icon-large"></i></a></li>  
             <li> <a href ="#introNpic" ><i class="fa fa-question-circle"></i></a></li>  
             <li> <a href ="#proj" ><i class="fa fa-tasks"></i></a></li>
             <li> <a href ="#contacts"><i class="fa fa-phone"></i></a></li>
           </ul>
       </div>
-    </nav>
+    </nav> -->
     <!-- centering a div -->
   <!-- https://blog.hubspot.com/website/center-div-css#:~:text=To%20center%20a%20div%20horizontally%20on%20a%20page%2C%20simply%20set,equally%20between%20the%20two%20margins. -->
 
   <!-- text  -->
   <div class="hero-text" id="hText">
     <div class="txt">
-     <h1>I am Saba</h1> 
+    <h1>I am Saba</h1> 
     <p><span class="introText" style="color:#838C95" style="word-spacing:3px">A </span> Software Engineer<span style="color:#838C95;" style="word-spacing:30px;" > based in </span> Victoria.</p>
     <p><span class= "introTxt" style="color:#838C95">I am a </span>Front-end Web Designer<span style="color:#838C95"> and </span>Developer.</p> 
   </div> 
@@ -49,7 +52,7 @@
        
     <!--1. content div -->
    <div class="contentClass">
-     <h2>About me</h2> 
+     <h2>About me</h2><br> 
       <p>I am a versatile Front-end web designer and developer.<br>
         Hands on experience with HTML5, CSS, Bootstrap, JavaScript,<br> React.js and Agile methodologies including Scrum.</p>
       <p id="lshow">Specialized in building responsive and user-friendly websites.<br> I am self-starter, proactive, a supportive team player, adaptable <br> and have excellent communication skills. </p> 
@@ -60,13 +63,15 @@
         </button> 
         </div>
     </div>
-
-    <div class="vl"></div>
+<!-- 
+     <div class="vl"></div>  -->
 
 <!-- content div ends here -->
       <!--2. icon div starts here   -->
-      <div class= "imgCont" id="contacts">
-      <h2>Contact me</h2>
+      <div class= "imgCont">
+      <h2>Contact me</h2> 
+      <!-- <div class="bgimage"></div> -->
+      <img class="imAge" src="image/pic2.jpg" alt="" height="200" width="400">
         <div class="lIst">
         <ul>
           <li> <a href ="mailto:sabasaeedakhtar@gmail.com" target="_top"><i class="fa fa-envelope "></i></a></li>  
@@ -163,38 +168,49 @@
       <div class="cardcontainer">
         <div class="card-deck">
             <div class="card mb-4">
-                <img class="card-img-top img-fluid" src="image/taskplanner.jpg" alt="Card image cap" width="500" height="280">
+                <img class="card-img-top img-fluid" src="image/Vnp.jpg" alt="Card image cap" width="500" height="400">
                 <div class="card-body">
-                    <h4 class="card-title">Plan your day</h4>
-                    <p class="card-text">This Website helps you to organize your daily routine by maintaining your "To-do", "In progress", "Done" and "Review" tasks.<br>Build with HTML5, CSS3, JavaScript and Web storage.</p>
-                    <a href="https://github.com/Any22/saba-akhtar.github.io/tree/master/projects/planmyday"><small class="text-muted">GitHub link</small></a></p>
-                    <a href="projects/planmyday/taskplanner.html" class="btn btn-primary"><span>See Project</span></a>
+                    <h4 class="card-title">Company Profile</h4>
+                    <p class="card-text"></p>
+                    <a href="https://github.com/Any22/Any22.github.io/tree/master/v%26p"><small class="text-muted">GitHub link</small></a></p>
+                    <a href="https://any22.github.io/v&p/index.html" class="btn btn-primary"><span>See Project</span></a>
                 </div>
             </div>
             <div class="card mb-4">
-              <img class="card-img-top img-fluid" src="image/calculator.jpg" alt="calculator" width="500" height="280">
+              <img class="card-img-top img-fluid" src="image/taskplanner.jpg" alt="taskplanner" width="500" height="400">
+              <div class="card-body">
+                  <h4 class="card-title">Plan your day</h4>
+                  <p class="card-text">This is a simple calculator which works perfectly on 15-digits(max).It is perfect for your simple day to day calculations.<br>Build with HTML5, CSS3 and JavaScript. </p>
+                  <a href="https://github.com/Any22/saba-akhtar.github.io/tree/master/projects/planmyday"><small class="text-muted">GitHub link</small></a></p>
+                  <a href="projects/planmyday/taskplanner.html" class="btn btn-primary"><span>See Project</span></a>
+              </div> 
+          </div> 
+            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+            <div class="card mb-4">
+              <img class="card-img-top img-fluid" src="image/calculator.jpg" alt="Calculator" width="500" height="400">
               <div class="card-body">
                   <h4 class="card-title">Calculator</h4>
                   <p class="card-text">This is a simple calculator which works perfectly on 15-digits(max).It is perfect for your simple day to day calculations.<br>Build with HTML5, CSS3 and JavaScript. </p>
                   <a href="https://github.com/Any22/calculator.github"><small class="text-muted">GitHub link</small></a></p>
                   <a href="https://any22.github.io/calc.html" class="btn btn-primary"><span>See Project</span></a>
-              </div> 
-          </div> 
-            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-            <div class="card mb-4">
-              <img class="card-img-top img-fluid" src="image/recipe.jpg" alt="Card image cap" width="500" height="200">
-              <div class="card-body">
-                  <h4 class="card-title">Meal Today</h4>
-                  <p class="card-text">What to cook today? <br>This question bothers us all on daily basis. <br> "Meal Today" is the perfect solution. To find delicious recipes, just enter the main ingredient, ie chicken, potatoes or pasta and tada....! Awesome recipes will be available to you in no time.
-                     <br>Build with HTML5, CSS3 Javascript, React and API integration.</p>
-                  <a href="https://github.com/Any22/React-apps"><small class="text-muted">GitHub link</small></a></p>
-                  <a href="projects/recipe/recipeapp/public/index.html" class="btn btn-primary"><span>See Project</span></a>
+                  
               </div>
           </div>
 
              <div class="w-100 d-none d-md-block d-lg-none">wrap every 3 on md</div>
              <div class="card mb-4">
-              <img class="card-img-top img-fluid" src="image/melbourne.jpg" alt="Card image cap" width="500" height="280">
+              <img class="card-img-top img-fluid" src="image/recipe.jpg" alt="Recipe" width="500" height="400">
+              <div class="card-body">
+                  <h4 class="card-title">Meal Today</h4>
+                  <p class="card-text">What to cook today? <br>This question bothers us all on daily basis. <br> "Meal Today" is the perfect solution. To find delicious recipes, just enter the main ingredient, ie chicken, potatoes or pasta and tada....! Awesome recipes will be available to you in no time.
+                    <br>Build with HTML5, CSS3 Javascript, React and API integration.</p>
+                    <a href="https://github.com/Any22/React-apps"><small class="text-muted">GitHub link</small></a></p>
+                    <a href="projects/recipe/recipeapp/public/index.html" class="btn btn-primary"><span>See Project</span></a>
+              </div>
+          </div>
+          <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+          <div class="card mb-4">
+              <img class="card-img-top img-fluid" src="image/melbourne.jpg" alt="Melbourne" width="500" height="400">
               <div class="card-body">
                   <h4 class="card-title">Melbourne</h4>
                   <p class="card-text">This is a responsive website that shows the best places to visit in Melbourne.<br>Build with HTML5,CSS3 and JavaScript.</p>

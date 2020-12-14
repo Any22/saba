@@ -1,12 +1,21 @@
-// function closeNav() {
-//     //  document.getElementById("nvbar").style.width = "0";
-//     // $("#nvbar").toggle();
-//   }
-let button1=document.querySelector("#button1");
-button1.onclick = function(){
-     
- $("#lshow").toggle();
+// menu burger button 
+// let menuOpen=false;
+// let menuBtn=document.querySelector("#check");
+// menuBtn.addEventListener('click',() => {
+//     if (!menuOpen){
+//         menuBtn.classList.add('open');
+//         menuOpen=true;
+//     } else{
+//         menuBtn.classList.remove('open');
+//         menuOpen=false;
+//     }
+// })
 
+
+//show text less and more 
+let button1=document.querySelector("#button1");
+button1.onclick = function(){ 
+ $("#lshow").toggle();
  }
 //  var slideIndex = 1;
 //  showSlides(slideIndex);

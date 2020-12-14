@@ -28,76 +28,24 @@ body,html{
   background-repeat: no-repeat;
   background-size: cover;
 
-  /* Needed to position the navbar */
-   /* position: realtive;  */
+  
 }
 /* The navbar class */
-.topnav {
-  /* position:fixed; */
-  overflow: hidden; 
-  background-color: rgb(0, 0, 0);             /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.5); 
-  width:100%;
-  top:0;
-  right:0;
-  left:0;
-  padding : 40px;
-} 
-/* Position the navbar container inside the image*/
-.container {
-  position: fixed; 
-  margin-right: 20px;
-  width: 100%;
-  /* border:solid red; */
-  top:0;
-  right:0;
-  left:0;
-  
-}
-.navbar-brand
-{
-  color:white;
-  font-weight: bold;
-  font-size :25px;
-  line-height: 70px;
-  padding-right :20px;
 
-}
 
-.container ul 
-{
-  float : right;
-  position :relative;
-  z-index:170;
-  /* border: solid green; */
-}
 
-.container ul li 
-{
-display: inline-block;
-line-height: 70px; 
-/* border : solid lightpink; */
-
-/* margin : 0 5px;  */
-} 
-
-.container ul li a 
-{
-  color: white ;
-  font-size: 17px;
-  padding : 7px 40px; 
-  
+   
   /* border: solid yellow;  */
-  text-transform: uppercase;
+  /* text-transform: uppercase;
 }
 
-.container ul li a:hover
+.container #nvbar li a:hover
 {
-background : rgb(2, 2, 61); 
+background : rgb(2, 2, 61);  */
 /* border:grey solid 2px;
 width:50%;
 border-radius:50%;  */
-transition: .2s ; 
+/* transition: .2s ; 
 } 
 
  .checkbtn{
@@ -106,11 +54,11 @@ transition: .2s ;
   color:white;
   float:right;
   line-height: 80px;
-  margin-right:10px;
+  margin-right:10px; */
   /* border: solid gainsboro;
   border-radius: 10px; */
   
-  cursor : pointer;
+  /* cursor : pointer;
   display:none;
 }  
 #check
@@ -120,20 +68,21 @@ transition: .2s ;
 h2 {
 color: white;
 font-size: 22px;
-}
+} */
 /* h1{
   font-size: 46px;
 }
 */
-h3{
+/* h3{
   font-weight: normal;
-} 
+}  */
 /* styling the close button on topnav */
-.closebtn{
+/* .closebtn{
 color:white ;
 font-size: 36px;
  display: none; 
-}
+} */
+
 /* Place text in the middle of the image */
 .hero-text {
    
@@ -146,8 +95,8 @@ font-size: 36px;
     padding:2rem;  
     /* border:red solid 3px;  */
     text-align: center;
-     background: rgb(0, 0, 0);             /*Fallback color */
-   background: rgba(0, 0, 0, 0.5);      /*Black background with 0.5 opacity   */
+    background: rgb(0, 0, 0);             /*Fallback color */
+    background: rgba(0, 0, 0, 0.5);      /*Black background with 0.5 opacity   */
     color: #f1f1f1;                      /* Grey text */
     color: white; 
     height: 340px;
@@ -155,19 +104,25 @@ font-size: 36px;
     
   } 
   .txt {
-     text-align: center; 
-     font-size: 3em;
+    text-align: center; 
+    font-size: 4em; 
     font-weight: normal;
     
-    z-index: 5;
 }
    /* title styles */
+   .txt h1{
+     position:relative;
+     
+     font-size: 6em;
+   }
+
 .txt p {
   position: relative;
   overflow: hidden;
   display: block;
   line-height: 1.2;
-  z-index:5;
+  font-size: 3.5em;
+  z-index:6;
 }
 
 .txt p::after{
@@ -217,34 +172,40 @@ font-size: 36px;
   0% {transform: translateX(0)}
   100% {transform: translateX(200%)}
 }
-.iCon ul li a
-{
-  
-  float :right; 
-  color:white;
-}
+
 .intropic{
 display: inline-flex;
-flex-direction: row;
-flex-wrap: wrap;
-/* border: black solid 3px; */
+flex-direction: row; 
+flex-wrap: wrap; 
+border: black solid 3px; 
 padding:10px;
 width:100vw;
 height:auto;
+font-weight:lighter;
 background-color:#2b2b2b; 
 color: #7A7A7A;
 }
 .contentClass{
 /* keeping height and width auto so the content can be adjusted itself when differnt screens are used  */
-height: auto;  
-width:auto;
-/* border: green solid 3px; */
+flex:1; 
+ /* height: auto;   
+width:auto;  */
+text-align: center;
+border-right:#3a3a3f solid 1px;  
 padding: 20px 40px; 
+
 /* keeping margin auto to place the content in the middle */
 /* margin:auto; */
 box-sizing: border-box;
 }
-
+/* making heading white */
+.contentClass h2{
+  color:white;
+  font-weight:normal;
+  font-size:1.5em;
+  
+  
+}
 .mLbutn{
   display: flex;
   justify-content: center;
@@ -322,45 +283,49 @@ box-sizing: border-box;
      opacity: 0.05;
      background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
  }
- /* .intropic .vl {
-  border-left: #3a3a3f solid 2px;
-  height: 300px;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  top: 640px; 
-}*/
+ 
  .imgCont{
+  flex:1;
   height:auto;
-  width:auto;
+  justify-content: center;
   /* border: red solid 3px; */
-  padding: 0 50px; 
-  margin:auto; 
+  padding :30px 40px;
   box-sizing: border-box;
-  }
-  
-.imgCont h2{
-  position : relative;
-  right: 80px;
-  /* bottom:80px; */
-  top:-80px;
-  /* border: 3px solid #73AD21; */
-  /* padding: 0px 0px; */
-}
-
-.lIst ul{
-  display : inline-flex;
-  /* border:palegoldenrod solid 4px; */
-  padding :10px;
   margin:auto;
   }
+
+   .imgCont h2{
+    color:white;
+    position : relative;
+    bottom:40px;  
+    font-weight:normal;
+    font-size:1.5em; 
+      } 
+
+  .imAge{
+  position :relative;
+  /* left:50px;  */
+  bottom:-20px;
+  filter: blur(2px);
+  -webkit-filter: blur(1px);
+    /* border:blue solid 3px; */
+ /* left:10px; */
+  }
   
+  .lIst ul{
+  display: inline-flex;
+  position: relative;
+  bottom: 130px;
+  left: 10px;
+  padding: 10px;
+  margin: auto;
+}   
 .lIst ul li {
   list-style:none;
   position : relative; 
   display :block;
   color:#667;
-  font-size: 30px;
+  font-size: 27px;
   height:70px; 
   width:70px;
   background:#171515;
@@ -385,7 +350,7 @@ box-sizing: border-box;
     transition:0.5s;
   }
    .lIst ul li a {
-    color:white ;
+    color:white;
     padding:12px 20px;
     width:50%;
     /* line-height: 60px; */
@@ -441,9 +406,7 @@ box-sizing: border-box;
   transform:scale(0.9);
   transition:0.5s;
 }
- .lIst ul li a {
-  color:white ;
-} 
+ 
 .lIst ul li:nth-child(1):before{
   background:#4267B2;
 }
@@ -498,24 +461,26 @@ text-shadow:0 0 15px #E1306C;
     flex-direction: row;
     width:100%; 
      width:100vw; 
+     background-color: #1D2951;
+     text-align: center;
      /* border:solid red;  */
-    background-image: url('image/project.jpg');  
+    /* background-image: url('image/project.jpg');   */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* padding: 0px 4px; */
     height:auto;
-    /* height:100%;
-     height:780px;   */
+  
   } 
   .proJect h2
   {
   color:white;
   padding:10px;
   height:60px;
-  background-color:rgba(0,0,0);             /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.5);
-  
+ width:100vw;
+  /* background-color:rgba(0,0,0);             Fallback color
+  background-color: rgba(0, 0, 0, 0.5); */
+  font-size: 1.5em;
    /* width:100vw;  */
   margin: 10px 40px;
   }
@@ -523,6 +488,10 @@ text-shadow:0 0 15px #E1306C;
   
     margin: 10px 20px ;
 
+  }
+  .card {
+    position :relative;
+    
   }
   .card:hover
   {
@@ -584,38 +553,31 @@ text-shadow:0 0 15px #E1306C;
   background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
 }
  
-
-
 @media only screen and (min-width: 200px) and (max-width : 414px) 
 {
-  .container ul 
-  {
-    float : right;
-    /* border: solid green;   */
-     position :relative; 
-     width: 100vw;
-     /* width:100%; */
-     z-index:170;
-  }
+  
+  /* Animation here https://www.youtube.com/watch?v=dIyVTjJAkLw*/
+  
+ 
   .hero-text{
-    /* font-size:0.2rem; */
-    /* font-weight: lighter; */
+     font-size:0.2rem; 
+     font-weight: lighter; 
     position: relative;
-    z-index:5;
+    
   }
   .txt h1{
     position:relative;
     text-align: center; 
     font-size: 1em;
     font-weight: normal;
-    z-index: 5;
+    
 }
   .txt p{
     position:relative;
     text-align: center; 
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-weight: normal;
-    z-index: 5;
+    
   }
 
   .intropic{
@@ -636,37 +598,56 @@ text-shadow:0 0 15px #E1306C;
     /* keeping height and width auto so the content can be adjusted itself when differnt screens are used  */
      height: auto;  
      width:auto;
-    /* border: green solid 3px;  */
+    border-bottom:#3a3a3f solid 1px;  
      padding:20px;
       }
 
-    .intropic .vl{
-      margin:auto;
-      
-    }
     .imgCont{
       height: auto;
       width:auto;
       box-sizing: border-box;
     }
-}
+    .imAge{
+      width:20em;
+      height:10em;
+      position: relative;
+      left: 1px;
+      top: 40px;
+    }
 
+    .lIst ul{
+      position: relative;
+      /* border:green solid 3px; */
+      bottom:90px;
+      left:3px;
+     
+   }
+
+}
 /* extra small devices (portrait tablets and large phones, 600px and up) */ 
 @media only screen and (max-width: 600px) {
-  .container ul 
-{
-  float : right;
-   /* border: solid green;  */
-   position :relative;
-   z-index:170;
-}
+  
 
   .hero-text{
     font-size:1em;
     font-weight: lighter;
-    position: relative;
-    z-index:5;
+    
   }
+  .txt h1{
+    position:relative;
+    text-align: center; 
+    font-size: 0.5em;
+    font-weight: normal;
+   
+}
+  .txt p{
+    position:relative;
+    text-align: center; 
+    font-size: 0.3em;
+    font-weight: normal;
+    
+  }
+
 
  .intropic{
   display: inline-flex;
@@ -677,10 +658,7 @@ text-shadow:0 0 15px #E1306C;
   width:100vw;
   height:auto;      
 }
-.intropic .vl {
-  border-left: #2b2b2b solid 2px;
-  
-}
+
   .contentClass{
   /* keeping height and width auto so the content can be adjusted itself when differnt screens are used  */
   height: auto;  
@@ -694,7 +672,7 @@ text-shadow:0 0 15px #E1306C;
   .imgCont{
       height: auto;
       width:auto;
-      border-top:#3a3a3f solid 3px;   
+      /* border-top:#3a3a3f solid 3px;    */
       padding:15px;
       margin:auto; 
       box-sizing: border-box;
@@ -702,21 +680,34 @@ text-shadow:0 0 15px #E1306C;
   .imgCont h2{
     position:relative;
     left:-5px;
-    top:5px;
+     top:5px;  
   }
 }
   
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  
   .hero-text{
+    position: relative;
+    z-index: 5;
+  }
+  .txt h1{
+    position:relative;
+    text-align: center; 
     font-size: 1em;
+    font-weight: normal;
+    z-index: 6;
+}
+  .txt p{
+    position:relative;
+    text-align: center; 
+    font-size: 0.7em;
+    font-weight: normal;
     
   }
-  .hero-text h1,p{
-    z-index:6;
-  }
 
+   
   .intropic{
       display: inline-flex;
       flex-direction: column;
@@ -732,10 +723,10 @@ text-shadow:0 0 15px #E1306C;
       width:auto;
       /* border: green solid 3px; */
       padding: 20px 10px; 
-      /* keeping margin auto to place the content in the middle */
-      /* margin:auto; */
       box-sizing: border-box;
       }
+  
+  }
   .imgCont{
       height: auto;
       width:auto;
@@ -743,195 +734,106 @@ text-shadow:0 0 15px #E1306C;
       padding:30px 10px;
       /* margin:auto; */
       box-sizing: border-box;
-}
+  }
+  .imgCont h2{
+    text-align:center;
+    /* position:relative; */
+    /* left:-5px; */
+     /* top:3px;  */
+  }
   
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .container ul{
-    position:realtive ;
-    z-index:170;
-  }
+  
   .hero-text{
     font-size: 0.5rem;
   }
+  
   .intropic{
-      display: inline-flex;
-      flex-direction: column;
+      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-      /* border: black solid 3px; */
+      
       padding:10px;
-      margin: auto;
+      /* margin: auto; */
       width:100vw;
       height:auto;      
   }
   .contentClass{
-    margin:auto;
-  }
+    flex:1;
+    height:auto;
+    padding :30px 40px; 
+    text-align: center;
+    box-sizing: border-box;
+     /* border-bottom:#3a3a3f solid 1px;  */
+    /* margin:auto;  */
+  } 
   .imgCont{
-    margin:auto;
-    padding:40px;
-    border-top:#3a3a3f solid 3px;  
+    flex:1;
+    height:auto;
+    padding :30px 40px;
+    text-align: center;
+    /* border:blue solid 3px;  */
+    box-sizing: border-box;
+    /* margin:auto;  */
+    }
+  
+     .imgCont h2{
+      /* color:white; */
+      position:relative;
+      top:2px;   
+      font-weight:normal; 
+        } 
+        .imAge{
     
-  }
-  .intropic .vl{
-    border-left: #2b2b2b solid 2px;
-  }
-  .imgCont h2{
-    position:relative;
-    right:55px;
-    top:-15px;
-  }
-  .card{
-    position :relative;
-    z-index:10;
-  }
+           position :relative;
+           left:10px; 
+            top:20px;  
+          filter: blur(2px);
+          -webkit-filter: blur(1px);
+          /* border:blue solid 3px; */
+       /* left:10px; */
+        }
 }
-
-@media only screen and (max-width:858px)
-{
-  .closebtn{
-    display: inline;
-    color:white ;
-    font-size: 36px;
-    margin-top: 90px;
-    margin-left: 120px;
-    }
-    .container ul li a{
-      font-size: 14px;
-    }
-  .checkbtn{
-      display: block;
-  }
-  .container ul{
-      position:fixed;
-      /* width:40%; */
-      width:auto;
-      height:140vh;
-      background:black ;
-       top:0px; 
-      left:-50%;
-      margin:auto;
-      /* border:red solid 3px; */
-      /* text-align:center; */
-      transition: all .3s;
-      z-index:200;
-  }
-  .container ul li {
-    display :block;
-    position:relative;
-    overflow: hidden; 
-    /* border:green solid 3px; */
-      margin: 70px 5px; 
-     right:20px;
-      /* margin:auto; */
-      line-height:30px;
-  }
-  .container ul li a{
-      font-size: 16px;
-      /* margin:auto; */
-  }
-  a.active ,a:hover{
-      background:none;
-      color:lightblue;
-  }
-  .hero-text {
-    margin : 80px 90px; 
-    font-size: 0.5rem;
-  }
-  #check:checked ~ ul{
-      left :0;
-  }
-  .intropic{
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* border: black solid 3px; */
-    padding:10px;
-    margin: auto;
-    width:100vw;
-    height:auto; 
-    z-index:1;     
-}
-.contentClass{
-  margin:auto;
-}
-.mLbutn #button1{
-  z-index:5;
-}
-
-  .proJect{
-    z-index:10;
-  }
-  .card {  
-    z-index:14;
-  }
-} 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   
-  .closebtn{
-    display: inline;
-    color:white ;
-    font-size: 36px;
-    margin-top: 90px;
-    margin-left: 120px;
-    }
-    .container ul li a{
-      font-size: 14px;
-    }
-  .navbar-brand{
-      font-size:30px;
-      padding-left:40px;
-  }
-  
-  .container ul li a {
-      font-size: 18px;
-      list-style: none;
-  }
   .hero-text{
-    font-size: 0.5rem;
-    z-index:6;
+    font-size: 0.5rem; 
   }
-  
   .intropic{
-      display: inline-flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      /* --border: black solid 3px; */
-      padding:10px;
-      width:100vw;
-      height:auto;      
-  }
-  .intropic .vl {
-    border-left: #3a3a3f solid 2px;
-    height: 300px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    top: 630px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: black solid 3px; */
+    padding:10px;
+    width:100vw;
+}
+.contentClass{
+  flex:1; 
+  border-right:#3a3a3f solid 1px;  
+  padding: 20px 40px; 
+  box-sizing: border-box;
   }
   .imgCont{
-    border-top:#2b2b2b solid 2px;
-  }
-  .imgCont h2{
-    position : relative;
-    right: 50px;
-    bottom:70px; 
-    /* border: 3px solid #73AD21; */
-    /* padding: 0px 0px; */
-   }    
+    flex:1;
+    height:500px;
+    justify-content: center;
+    /* border: red solid 3px; */
+    padding :20px 40px;
+    box-sizing: border-box;
+    margin:auto;
+    }
+  
 }  
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .hero-text{
     font-size: 0.5rem;
-    z-index: inherit;
   }
-  
   .intropic{
       display: inline-flex;
       flex-direction: row;
@@ -939,45 +841,32 @@ text-shadow:0 0 15px #E1306C;
       /* border: black solid 3px; */
       padding:10px;
       width:100vw;
-      height:auto;      
   }
-  .intropic .vl {
-    border-left: #3a3a3f solid 2px;
-    height: 300px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    top: 630px;
-  }
-  .contentClass{
-      /* keeping height and width auto so the content can be adjusted itself when differnt screens are used  */
-      height: auto;  
-      width:auto;
-      /* border: green solid 3px; */
-      padding: 10px 30px;  
-      /* keeping margin auto to place the content in the middle */
-      /* margin:auto; */
-      box-sizing: border-box;
-      }
-      
-  .imgCont{
-       height: auto;
-       width:auto;
-       border-top:#2b2b2b solid 3px;
-      /* border: red solid 3px; */
-      padding:10px 20px;
-      margin:auto; 
-      box-sizing: border-box;
-}
-.imgCont h2{
-  position : relative;
-  right: 50px;
-  bottom:160px;  
   
-  /* border: 3px solid #73AD21;  */
-  /* padding: 0px 0px; */
+.contentClass{
+  flex:1; 
+  border-right:#3a3a3f solid 1px;  
+  padding: 20px 40px; 
+  box-sizing: border-box;
+  }
+.imgCont{
+  flex:1;
+  height:auto;
+  justify-content: center;
+  /* border: red solid 3px; */
+  padding :20px 40px;
+  box-sizing: border-box;
+  margin:auto;
+  }
+        
+  .imgCont h2{
+  color:white;
+  font-weight:normal; 
+/* border: 3px solid #73AD21;  */
+  } 
+    
  }
-}
+
   /*#skills{
     display:flex ;
     flex-direction: row;
@@ -1073,45 +962,6 @@ text-shadow:0 0 15px #E1306C;
     margin-top: 300px;
 } */
 
-
- /* style for responsivness
-
-  @media (max-width: 768px){
-  .nav-item{
-      text-align:left !important;  
-     } 
-     navbar-nav > li{
-      margin-left:50px;
-      margin-right:50px;
-      background: indigo;
-    }
-
-   .navbar-toggler-icon{
-    position: relative;
-    right: 200px;
-    border: 1px solid green;
-    border-radius: 5px;
-  }
-  .navbar-dark .navbar-toggler {
-    color: transparent; 
-    border-color:transparent;
-    z-index: 150;
-  }
-  
-
-} */
-/* 
-@media screen and (max-width:952px)
-{
-  .intropic{
-    display:flex;
-    flex-direction:column;
-    }
-} */
-
-
-   
-
 footer {
     position :relative;
     bottom :0px;
@@ -1134,10 +984,8 @@ footer {
     margin-top : 20px;
     height :20px;
     width : 60px;
-    color: white ;
+    color: white;
 }
-
- 
 /* size is changing here for copy right note */
 .copyRight {
     font-size : 14px;
