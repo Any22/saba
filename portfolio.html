@@ -14,6 +14,40 @@
 </head>
 <body>
   <div class="heaDer" id="wStart">
+    <nav class=" navbar navbar-expand-lg navbar-dark fixed-top">
+      <!-- places the navbar contents into a box giving even spaces on the left and right cornes, text uppercase-->
+      <div class="container text-uppercase pt-3">
+        <!-- from getbootstrap site (components -> navbar) -->
+        <a class="navbar-brand text-white font-weight-bold" href="#"></a>
+        <!-- from getbootstrap site (components -> navbar) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>	
+        </button>
+        <!-- from getbootstrap site (components -> navbar) -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">	
+          <!-- from getbootstrap site (components -> navbar) ml = margin left -->
+          <ul class="navbar-nav ml-auto text-white">
+            <!-- from getbootstrap site (components -> navbar) -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#hText">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- added extra link -->
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutMe">About me</a>
+            </li>
+            <!-- added extra link -->
+            <li class="nav-item ">
+              <a class="nav-link" href="#proj">Projects</a>
+            </li>
+            <!-- added extra link -->
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
     <!-- <nav class="topnav">
     <div class="container">
         <a class="navbar-brand" href="#"></a>
@@ -51,7 +85,7 @@
   <div class="intropic" id="introNpic">
        
     <!--1. content div -->
-   <div class="contentClass">
+   <div class="contentClass" id="aboutMe">
      <h2>About me</h2><br> 
       <p>I am a versatile Front-end web designer and developer.<br>
         Hands on experience with HTML5, CSS, Bootstrap, JavaScript,<br> React.js and Agile methodologies including Scrum.</p>
