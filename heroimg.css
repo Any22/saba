@@ -1108,12 +1108,13 @@ button::after {
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 20px; /* Some padding */
-  border-radius: 50px; /* Rounded corners */
+  border-radius: 50%; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: rgb(119, 117, 117); /* Add a grey background on hover */
+  border: rgb(119, 117, 117);
 }
 footer {
   position: relative;
