@@ -35,6 +35,7 @@ class Card {
         this.cardArr = JSON.parse(localStorage.getItem("mytask")) || [] ;
         this.currentId = parseInt(localStorage.getItem("currentID")) || 1;
         localStorage.setItem('currentID',this.currentId);
+       
         this.master =master;
         } 
             addcard(cname,description,assignee,dDate,stat){
@@ -103,8 +104,8 @@ class Card {
             //   }
 
                 displayTask(){
-                   this.master.innerHTML ="";                                           //refreshing page content 
-                  let mynewtasks= JSON.parse(localStorage.getItem ("mytasks"));   
+                  this.master.innerHTML ="";                                           //refreshing page content 
+                  let mynewtasks= JSON.parse(localStorage.getItem("mytasks"));   
                    this.cardArr=mynewtasks;
                 
                 for (let i=0 ; i<mynewtasks.length ; i++){
@@ -153,8 +154,9 @@ class Card {
           }
         const taskcontainer = document.querySelector("#taskcontainer"); 
         const cardDeck=new CardManager(taskcontainer); 
+        
+        // view all tasks
         const allTask=document.querySelector("#allTasks");
-
 
         allTask.addEventListener("click",displayallTasks);
         function displayallTasks(){
@@ -180,9 +182,11 @@ addButton.onclick = function(){
    
   if (validname && validdes && validassignee && checkvalidDate){
       cardDeck.addcard(tname.value,tdes.value,assignee.value,dDate.value,sTatus.value);
+      location.reload();
       cardDeck.displayTask();
        $("#myModal").modal("hide");
-      resetFields();   
+      resetFields();  
+      
    }
 else
 {
@@ -202,7 +206,7 @@ tname.addEventListener("input",function(event)
          // break;
       } else 
       {
-        nmErrMsg.innerHTML="looks ok!";
+        nmErrMsg.innerHTML="looks good!";
         nmErrMsg.style.color="green";
         tname.style.borderColor = "green";
         validname=true;
