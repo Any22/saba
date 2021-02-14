@@ -91,7 +91,6 @@ html {
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  margin-left: 30px;
 }
 #addTask {
   margin-top: 60px;
