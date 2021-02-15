@@ -117,9 +117,9 @@ a {
     margin-top: 0;
   }
   /* Style the submit button */
-  input[type="submit"] {
+  #sbmt {
     position: relative;
-    left: auto;
+    left: 140px;
     background-color: #4caf50;
     color: white;
     padding: 12px 20px;
