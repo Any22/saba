@@ -1,349 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="heroimg.css">
+    <link rel="stylesheet" href="heroimg.css" />
     <title>Saba Akhtar</title>
-</head>
-<body>
-  <div class="heaDer" id="wStart">
-    <nav class=" navbar navbar-expand-lg navbar-dark fixed-top">
-      <!-- places the navbar contents into a box giving even spaces on the left and right cornes, text uppercase-->
-      <div class="container text-uppercase pt-3">
-        <!-- from getbootstrap site (components -> navbar) -->
-        <a class="navbar-brand text-white font-weight-bold" href="#"></a>
-        <!-- from getbootstrap site (components -> navbar) -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>	
-        </button>
-        <!-- from getbootstrap site (components -> navbar) -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">	
-          <!-- from getbootstrap site (components -> navbar) ml = margin left -->
-          <ul class="navbar-nav ml-auto text-white">
-            <!-- from getbootstrap site (components -> navbar) -->
-            <li class="nav-item active">
-              <a class="nav-link" href="#hText">Home <span class="sr-only">(current)</span></a>
+  </head>
+  <body>
+    <div class="heaDer" id="wStart">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <!-- places the navbar contents into a box giving even spaces on the left and right cornes, text uppercase-->
+        <div class="container text-uppercase pt-3">
+          <!-- from getbootstrap site (components -> navbar) -->
+          <a class="navbar-brand text-white font-weight-bold" href="#"></a>
+          <!-- from getbootstrap site (components -> navbar) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- from getbootstrap site (components -> navbar) -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- from getbootstrap site (components -> navbar) ml = margin left -->
+            <ul class="navbar-nav ml-auto text-white">
+              <!-- from getbootstrap site (components -> navbar) -->
+              <li class="nav-item active">
+                <a class="nav-link" href="#hText"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <!-- added extra link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutMe">About me</a>
+              </li>
+              <!-- added extra link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#proj">Projects</a>
+              </li>
+              <!-- added extra link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#sContacts">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- text  -->
+      <div class="hero-text" id="hText">
+        <div class="txt">
+          <h1>I am Saba</h1>
+          <p>
+            <span
+              class="introText"
+              style="color: #838c95"
+              style="word-spacing: 3px"
+              >A
+            </span>
+            Software Engineer<span
+              style="color: #838c95"
+              style="word-spacing: 30px"
+            >
+              based in
+            </span>
+            Victoria.
+          </p>
+          <p>
+            <span class="introTxt" style="color: #838c95">I am a </span
+            >Front-end Web Designer<span style="color: #838c95"> and </span
+            >Developer.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- header div ends here -->
+
+    <!-- **************************************************************************************************************************************************************************************************************** -->
+    <!-- About me starts  -->
+    <div class="intropic" id="introNpic">
+      <!--1. content div -->
+      <div class="contentClass" id="aboutMe">
+        <h2>About me</h2>
+        <br />
+        <p>
+          I am a versatile Front-end web designer and developer.<br />
+          Hands on experience with HTML5, CSS3, Bootstrap4, JavaScript ES6,<br />
+          React and Agile methodologies(Scrum).
+        </p>
+        <p id="lshow">
+          Specialized in building Responsive and user-friendly websites.<br />
+          I am self-starter, proactive, a supportive team player, adaptable
+          <br />
+          and have excellent communication skills.
+        </p>
+        <div class="mLbutn">
+          <button type="button" id="button1" class="btn btn-success">
+            <span>More/Less</span>
+          </button>
+          <button type="button" id="button2" class="btn btn-success">
+            <a href="image/Saba-Resume.docx" download>
+              <span> Download CV</span>
+            </a>
+          </button>
+        </div>
+      </div>
+      <!-- content div ends here -->
+
+      <!--2. icon div starts here   -->
+      <div class="imgCont" id="sContacts">
+        <h2>Contact me</h2>
+        <!-- <div class="bgimage"></div> -->
+        <img
+          class="imAge"
+          src="image/pic2.jpg"
+          alt=""
+          height="200"
+          width="400"
+        />
+        <div class="lIst">
+          <ul>
+            <li>
+              <a href="mailto:sabasaeedakhtar@gmail.com" target="_top"
+                ><i class="fa fa-envelope"></i
+              ></a>
             </li>
-            <!-- added extra link -->
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutMe">About me</a>
+            <li>
+              <a href="https://www.github.com/Any22/"
+                ><i class="fa fa-github"></i
+              ></a>
             </li>
-            <!-- added extra link -->
-            <li class="nav-item ">
-              <a class="nav-link" href="#proj">Projects</a>
-            </li>
-            <!-- added extra link -->
-            <li class="nav-item">
-              <a class="nav-link" href="#sContacts">Contact</a>
+            <li>
+              <a href="https://www.linkedin.com/in/sabaakhtar/"
+                ><i class="fa fa-linkedin-square"></i
+              ></a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-    
- 
-
-  <!-- text  -->
-  <div class="hero-text" id="hText">
-    <div class="txt">
-    <h1>I am Saba</h1> 
-    <p><span class="introText" style="color:#838C95" style="word-spacing:3px">A </span> Software Engineer<span style="color:#838C95;" style="word-spacing:30px;" > based in </span> Victoria.</p>
-    <p><span class= "introTxt" style="color:#838C95">I am a </span>Front-end Web Designer<span style="color:#838C95"> and </span>Developer.</p> 
-  </div> 
-  </div> 
-  </div>     
-  <!-- header div ends here -->
-
-  
-  <!-- **************************************************************************************************************************************************************************************************************** -->
-  <!-- About me starts  -->
-  <div class="intropic" id="introNpic">
-       
-    <!--1. content div -->
-    <div class="contentClass" id="aboutMe">
-     <h2>About me</h2><br> 
-      <p>I am a versatile Front-end web designer and developer.<br>
-        Hands on experience with HTML5, CSS3, Bootstrap4, JavaScript ES6,<br> React and Agile methodologies(Scrum).</p>
-      <p id="lshow">Specialized in building Responsive and user-friendly websites.<br> I am self-starter, proactive, a supportive team player, adaptable <br> and have excellent communication skills. </p> 
-        <div class="mLbutn">
-        <button type="button" id="button1" class="btn btn-success"><span>More/Less</span></button> 
-        <button type="button" id="button2" class="btn btn-success"><a  href="image/Saba-Resume.docx" download>
-          <span> Download CV</span> </a>
-        </button> 
-        </div>
+      <!-- icon div ends here -->
     </div>
-    <!-- content div ends here -->
+    <!-- about me ends here  -->
+    <!-- ******************************************************************************************************************************************** -->
 
-    <!--2. icon div starts here   -->
-    <div class= "imgCont" id="sContacts">
-    <h2>Contact me</h2> 
-    <!-- <div class="bgimage"></div> -->
-    <img class="imAge" src="image/pic2.jpg" alt="" height="200" width="400">
-      <div class="lIst">
-      <ul>
-        <li> <a href ="mailto:sabasaeedakhtar@gmail.com" target="_top"><i class="fa fa-envelope "></i></a></li>  
-        <li> <a href ="https://www.github.com/Any22/"><i class="fa fa-github"></i></a> </li> 
-        <li> <a href ="https://www.linkedin.com/in/sabaakhtar/"><i class="fa fa-linkedin-square"></i></a></li>
-      </ul>
+    <!-- skills div start here -->
+
+    <div class="flex-container">
+      <h2>My Tech Stack</h2>
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <img src="image/html.jpg" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <img src="image/cs3.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <img src="image/bootstrap.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <img src="image/javascript.jpg" alt="" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <img src="image/npm.jpg" alt="" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <img src="image/github.jpg" alt="" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <img src="image/jest.jpg" alt="" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <img src="image/api.jpg" alt="" />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
       </div>
     </div>
-    <!-- icon div ends here -->
-    </div>
-    <!-- about me ends here  -->   
-<!-- ******************************************************************************************************************************************** -->
-     
-<!-- skills div start here -->
 
-<div class="flex-container" >
- <h2>My Tech Stack</h2>  
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides">
-    <div class="numbertext"></div>
-    <img src="image/html.jpg">
-  </div>
-  <div class="mySlides">
-    <div class="numbertext"></div>
-    <img src="image/cs3.jpg">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext"></div>
-    <img src="image/bootstrap.jpg">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext"></div>
-    <img src="image/javascript.jpg" alt="">
-  </div>
-  
-  <div class="mySlides">
-    <div class="numbertext"></div>
-    <img src="image/npm.jpg" alt="">
-  </div>
-  
-  <div class="mySlides">
-    <div class="numbertext"></div>
-    <img src="image/github.jpg" alt="">
-  </div>
-  
-  <div class="mySlides">
-    <div class="numbertext"></div>
-    <img src="image/jest.jpg" alt="">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext"></div>
-    <img src="image/api.jpg" alt="">
-  </div>
-
-  <!-- Next and previous buttons -->
-  <div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  </div>
-  <br>
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-    <span class="dot" onclick="currentSlide(6)"></span>
-    <span class="dot" onclick="currentSlide(7)"></span>
-    <span class="dot" onclick="currentSlide(8)"></span>
-  </div>
-
-</div>
-
-</div>
-
-<!-- **************************************************************************************************************************************************** -->
-<!-- Projects starts here -->
-     <div class="proJect" id="proj">
+    <!-- **************************************************************************************************************************************************** -->
+    <!-- Projects starts here -->
+    <div class="proJect" id="proj">
       <h2>Project Gallery</h2>
       <div class="cardcontainer">
         <div class="card-deck">
-
           <!-- card #1 -->
           <div class="card mb-4">
-              <img class="card-img-top img-fluid" src="image/profile.jpg" alt="profile" width="500" height="400">
-              <div class="card-body">
-                  <h4 class="card-title">Profile page</h4>
-                  <p class="card-text">Build with HTML5, CSS3, Bootstrap4 and JavaScript.</p>
-                  <a href="https://github.com/Any22/saba-akhtar.github.io"><small class="text-muted">GitHub link</small></a></p>
-                  <section>
-                    <a href="https://any22.github.io/saba-akhtar.github.io/portfolio.html" class="btn btn-primary"><span>Demo</span></a>
-                    <button id="detailBtn">Details</button>
-                    <div id="myModal" class="modal">
-                      <!-- Modal content -->
-                      <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p>This is a fully responsive profile page</p>
-                      </div>
-                    </div>
-                  </section>
+            <img
+              class="card-img-top img-fluid"
+              src="image/profile.jpg"
+              alt="profile"
+              width="500"
+              height="400"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Profile page</h4>
+              <p class="card-text">
+                Build with HTML5, CSS3, Bootstrap4 and JavaScript.
+              </p>
+              <section>
+                <a
+                  href="https://any22.github.io/saba-akhtar.github.io/portfolio.html"
+                  class="btn btn-primary"
+                  ><span>Demo</span></a
+                >
+                <button id="detailBtn">Details</button>
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>This is a fully responsive profile page</p>
+                  </div>
                 </div>
-              <div class="card-footer text-muted">
-              </div>
+                <br /><a href="https://github.com/Any22/saba-akhtar.github.io"
+                  ><small class="text-muted">GitHub link</small></a
+                >
+              </section>
+            </div>
+            <div class="card-footer text-muted"></div>
           </div>
 
           <!-- card #2 -->
           <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="image/Vnp.jpg" alt="companyprofile" width="500" height="400">
+            <img
+              class="card-img-top img-fluid"
+              src="image/Vnp.jpg"
+              alt="companyprofile"
+              width="500"
+              height="400"
+            />
             <div class="card-body">
-                <h4 class="card-title">Company Profile</h4>
-                <p class="glow">Under contruction</p>
-                <p class="card-text"></p>
-                <a href="https://github.com/Any22/Any22.github.io/tree/master/v%26p"><small class="text-muted">GitHub link</small></a></p>
-                <section>
-                  <a href="https://any22.github.io/v&p/index.html" class="btn btn-primary"><span>Demo</span></a>
-                  <button id="detailBtn1">Details</button>
-                  <div id="myModal1" class="modal1">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                      <span class="close1">&times;</span>
-                      <p>This is a fully responsive profile page</p>
-                    </div>
+              <h4 class="card-title">Company Profile</h4>
+              <p class="glow">
+                Under contruction,Build with HTML5, CSS3 and JavaScript ES6
+              </p>
+              <p class="card-text"></p>
+              <section>
+                <a
+                  href="https://any22.github.io/v&p/index.html"
+                  class="btn btn-primary"
+                  ><span>Demo</span></a
+                >
+                <button id="detailBtn1">Details</button>
+                <div id="myModal1" class="modal1">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close1">&times;</span>
+                    <p>This is a fully responsive profile page</p>
                   </div>
-
-                </section>
-                
-              </div> 
-            <div class="card-footer text-muted">
+                </div>
+                <br /><a
+                  href="https://github.com/Any22/Any22.github.io/tree/master/v%26p"
+                  ><small class="text-muted">GitHub link</small></a
+                >
+              </section>
             </div>
-          </div> 
+            <div class="card-footer text-muted"></div>
+          </div>
 
           <!-- card #3 -->
-          <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+          <div class="w-100 d-none d-sm-block d-md-none">
+            <!-- wrap every 2 on sm-->
+          </div>
           <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="image/taskplanner.jpg" alt="taskplanner" width="500" height="400">
+            <img
+              class="card-img-top img-fluid"
+              src="image/taskplanner.jpg"
+              alt="taskplanner"
+              width="500"
+              height="400"
+            />
             <div class="card-body">
-                <h4 class="card-title">Plan your day</h4>
-                <p class="card-text">Build with HTML5, CSS3, JavaScript ES6 and Web storage API.</p>
-                <a href="https://github.com/Any22/saba-akhtar.github.io/tree/master/projects/planmyday"><small class="text-muted">GitHub link</small></a></p>
-                <section >
-                <a href="projects/planmyday/taskplanner.html" class="btn btn-primary"><span>Demo</span></a>
+              <h4 class="card-title">Plan your day</h4>
+              <p class="card-text">
+                Build with HTML5, CSS3, JavaScript ES6 and Web storage API.
+              </p>
+              <section>
+                <a
+                  href="projects/planmyday/taskplanner.html"
+                  class="btn btn-primary"
+                  ><span>Demo</span></a
+                >
                 <button id="detailBtn2">Details</button>
                 <div id="myModal2" class="modal2">
                   <!-- Modal content -->
                   <div class="modal-content">
                     <span class="close2">&times;</span>
-                    <p>This Website helps you to organize your daily routine by maintaining your "To-do", "In progress", "Done" and "Review"
-                    tasks.</p>
+                    <p>
+                      This Website helps you to organize your daily routine by
+                      maintaining your "To-do", "In progress", "Done" and
+                      "Review" tasks.
+                    </p>
                   </div>
                 </div>
-                </section>
-              </div>
-              <div class="card-footer text-muted">
-              </div>
+                <br /><a
+                  href="https://github.com/Any22/saba-akhtar.github.io/tree/master/projects/planmyday"
+                  ><small class="text-muted">GitHub link</small></a
+                >
+              </section>
+            </div>
+            <div class="card-footer text-muted"></div>
           </div>
-           
+
           <!-- card #4 -->
-          <div class="w-100 d-none d-md-block d-lg-none">wrap every 3 on md</div>
+          <div class="w-100 d-none d-md-block d-lg-none">
+            wrap every 3 on md
+          </div>
           <div class="card mb-4">
-          <img class="card-img-top img-fluid" src="image/recipe.jpg" alt="Recipe" width="500" height="400">
-          <div class="card-body">
+            <img
+              class="card-img-top img-fluid"
+              src="image/recipe.jpg"
+              alt="Recipe"
+              width="500"
+              height="400"
+            />
+            <div class="card-body">
               <h4 class="card-title">Meal Today</h4>
-              <p class="card-text">Build with HTML5, CSS3 Javascript, React and API integration.</p>
-                <a href="https://github.com/Any22/React-apps"><small class="text-muted">GitHub link</small></a></p>
-                <section>
-                <a href="projects/recipe/recipeapp/public/index.html" class="btn btn-primary"><span>Demo</span></a>
+              <p class="card-text">
+                Build with HTML5, CSS3 Javascript, React and API integration.
+              </p>
+              <section>
+                <a
+                  href="projects/recipe/recipeapp/public/index.html"
+                  class="btn btn-primary"
+                  ><span>Demo</span></a
+                >
                 <button id="detailBtn3">Details</button>
                 <div id="myModal3" class="modal3">
                   <!-- Modal content -->
                   <div class="modal-content">
                     <span class="close3">&times;</span>
-                    <p>What to cook today? <br>This question bothers us all on daily basis. <br> "Meal Today" is the perfect solution. Just
-                    enter the main ingredient, like chicken and tada....! Awesome recipes will be available to you in no time.</p>
+                    <p>
+                      What to cook today? <br />This question bothers us all on
+                      daily basis. <br />
+                      "Meal Today" is the perfect solution. Just enter the main
+                      ingredient, like chicken and tada....! Awesome recipes
+                      will be available to you in no time.
+                    </p>
                   </div>
                 </div>
-                </section>
-          </div>
-              <div class="card-footer text-muted">
-              </div>
+                <br /><a href="https://github.com/Any22/React-apps"
+                  ><small class="text-muted">GitHub link</small></a
+                >
+              </section>
+            </div>
+            <div class="card-footer text-muted"></div>
           </div>
 
           <!-- card #5 -->
           <div class="w-100 d-none d-md-block">wrap every 3 on md</div>
           <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="image/validation.jpg" alt="validation" width="500" height="400">
+            <img
+              class="card-img-top img-fluid"
+              src="image/validation.jpg"
+              alt="validation"
+              width="500"
+              height="400"
+            />
             <div class="card-body">
               <h4 class="card-title">Form Validation</h4>
-              <p class="card-text">Build with HTML5, CSS3 and vanilla JavaScript.
+              <p class="card-text">
+                Build with HTML5, CSS3 and vanilla JavaScript.
               </p>
-              <a href="https://github.com/Any22/saba-akhtar.github.io/tree/master/projects/form-validation"><small class="text-muted">GitHub link</small></a></p>
               <section>
-              <a href="projects/form-validation/contact.html" class="btn btn-primary"><span>Demo</span></a>
-              <button id="detailBtn4">Details</button>
-              <div id="myModal4" class="modal4">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close4">&times;</span>
-                  <p>Demonstarte form validation which prevents the user to submit the form empty or with incorrect data <br> empty Input text validation <br>the length of input validation<br> and last but not
-                  least Date validation.</p>
+                <a
+                  href="projects/form-validation/contact.html"
+                  class="btn btn-primary"
+                  ><span>Demo</span></a
+                >
+                <button id="detailBtn4">Details</button>
+                <div id="myModal4" class="modal4">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close4">&times;</span>
+                    <p>
+                      Demonstarte form validation which prevents the user to
+                      submit the form empty or with incorrect data <br />
+                      empty Input text validation <br />the length of input
+                      validation<br />
+                      and last but not least Date validation.
+                    </p>
+                  </div>
                 </div>
-              </div>
-             </section>
+                <br /><a
+                  href="https://github.com/Any22/saba-akhtar.github.io/tree/master/projects/form-validation"
+                  ><small class="text-muted">GitHub link</small></a
+                >
+              </section>
             </div>
-            <div class="card-footer text-muted">
-            </div>
+            <div class="card-footer text-muted"></div>
           </div>
-           <!-- card #6 -->
+          <!-- card #6 -->
           <div class="w-100 d-none"><!-- wrap every 4 on lg--></div>
           <div class="card mb-4">
-          <img class="card-img-top img-fluid" src="image/calculator.jpg" alt="Calculator" width="500" height="400">
+            <img
+              class="card-img-top img-fluid"
+              src="image/calculator.jpg"
+              alt="Calculator"
+              width="500"
+              height="400"
+            />
             <div class="card-body">
-                <h4 class="card-title">Calculator</h4>
-                <p class="card-text">Build with HTML5, CSS3 and JavaScript. </p>
-                <a href="https://github.com/Any22/calculator.github"><small class="text-muted">GitHub link</small></a></p>
-                <section>
-                <a href="https://any22.github.io/calc.html" class="btn btn-primary"><span>Demo</span></a>
+              <h4 class="card-title">Calculator</h4>
+              <p class="card-text">Build with HTML5, CSS3 and JavaScript.</p>
+              <section>
+                <a
+                  href="https://any22.github.io/calc.html"
+                  class="btn btn-primary"
+                  ><span>Demo</span></a
+                >
                 <button id="detailBtn5">Details</button>
                 <div id="myModal5" class="modal5">
                   <!-- Modal content -->
                   <div class="modal-content">
                     <span class="close5">&times;</span>
-                    <p>This is a simple calculator which works perfectly on 15-digits(max).It is perfect for your simple day to day
-                    calculations</p>
+                    <p>
+                      This is a simple calculator which works perfectly on
+                      15-digits(max).It is perfect for your simple day to day
+                      calculations
+                    </p>
                   </div>
                 </div>
-                </section>
-              </div>
+                <br />
+                <a href="https://github.com/Any22/calculator.github"
+                  ><small class="text-muted">GitHub link</small></a
+                >
+              </section>
+            </div>
           </div>
-         </div>
-      </div> 
-     </div>
-   <!-- project ends here  -->
-   <!-- scroll to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-   <!-- ************************************************************************************************************************************************************************************** -->
-<!-- footer starts here  -->
-<footer>
-  <div class="main-footer-content" >
-    <div class="social_link" id="contact_icon">
-    <a href ="mailto:sabasaeed1@gmail.com" target="_top"> <span class="fa fa-envelope "></span></a>
-    <a href ="https://www.github.com/Any22/" ><span class="fa fa-github"></Span></a>
-    <a href ="https://www.linkedin.com/in/sabaakhtar/"><span class="fa fa-linkedin-square"></span></a>
+        </div>
+      </div>
     </div>
-    <br>
-    <div class="copyRight">
-    <p><span>© Copyright 2020</span> Saba Akhtar </p>
-    </div>
-  </div>
-</footer>
-  
+    <!-- project ends here  -->
+    <!-- scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <!-- ************************************************************************************************************************************************************************************** -->
+    <!-- footer starts here  -->
+    <footer>
+      <div class="main-footer-content">
+        <div class="social_link" id="contact_icon">
+          <a href="mailto:sabasaeed1@gmail.com" target="_top">
+            <span class="fa fa-envelope"></span
+          ></a>
+          <a href="https://www.github.com/Any22/"
+            ><span class="fa fa-github"></span
+          ></a>
+          <a href="https://www.linkedin.com/in/sabaakhtar/"
+            ><span class="fa fa-linkedin-square"></span
+          ></a>
+        </div>
+        <br />
+        <div class="copyRight">
+          <p><span>© Copyright 2020</span> Saba Akhtar</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="portfolio.js"></script>
-   
-</body>
+  </body>
 </html>
