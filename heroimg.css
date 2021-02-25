@@ -629,7 +629,7 @@ button::after {
 
 .card {
   position: relative;
-  height: 400px;
+  height: fit-content;
 }
 
 .card:hover {
@@ -641,7 +641,7 @@ button::after {
   /* position: relative;
   top: 5px; */
   width: 100%;
-  height: 40%;
+  height: 50%;
 }
 .card-body .btn {
   cursor: pointer;
