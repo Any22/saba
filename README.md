@@ -5,9 +5,9 @@ This is my portfolio ,designed to showcase my technical skills, design & develop
 HTML5, CSS3, Bootstrap4, jQuery and vanilla JavaScript.
 
 ### Website Layout 
-    *Responsive 
+    - Responsive 
 
-![alt text](https://github.com/saba-akhtar.github.io/image/profile.jpg) 
+![alt text](https://github.com/Any22/saba-akhtar.github.io/blob/master/image/profile.jpg?raw=true) 
 
 ## Author
 Saba Akhtar  

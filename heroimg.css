@@ -870,7 +870,7 @@ button::after {
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
-    /* border-radius: 10px 30px; */
+    border-radius: 10px 30px;
     text-align: center;
     color: white;
     font-size: 1.5rem;
@@ -889,11 +889,11 @@ button::after {
     height: 200px;
   }
   .prev {
-    right: 305px;
+    right: 290px;
     border-radius: 3px 0 0 3px;
   }
   .next {
-    left: 305px;
+    left: 290px;
   }
   .prev,
   .next {
@@ -942,7 +942,7 @@ button::after {
     box-sizing: border-box;
   }
   .imAge {
-    width: 20em;
+    width: 19em;
     height: 10em;
     position: relative;
     left: 1px;
@@ -954,6 +954,63 @@ button::after {
     /* border: green; */
     bottom: 90px;
     left: 3px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .navbar-dark {
+    position: relative;
+    right: 10px;
+  }
+  .intropic {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: red solid 3px; */
+    overflow: hidden;
+    /* width: 100vw; */
+    border-right: none;
+    height: auto;
+  }
+
+  .contentClass {
+    /* border: red solid 2px; */
+    position: relative;
+    right: 20px;
+  }
+  #button2 {
+    width: 160px;
+  }
+  .imgCont {
+    /* border: red solid 2px; */
+    position: relative;
+    right: 20px;
+    padding-right: 0;
+  }
+  .slideshow-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: red solid 2px; */
+  }
+  .mySlides {
+    /* border: red solid 3px; */
+    width: 18em;
+  }
+  .mySlides img {
+    position: relative;
+    right: 18px;
+    /* border-radius: 25% 50%; */
+  }
+  .prev,
+  .next {
+    position: relative;
+    top: 30px;
+    left: 10px;
+    background-color: coral;
   }
 }
 /* extra small devices (portrait tablets and large phones, 600px and up) */
@@ -1024,7 +1081,7 @@ button::after {
     /* top: 5px; */
   }
   .mySlides img {
-    width: 340px;
+    width: 310px;
     height: 200px;
   }
 }
@@ -1078,6 +1135,22 @@ button::after {
 
 .imgCont h2 {
   text-align: center;
+}
+
+/* media query for landscpe view of mobile */
+@media (orientation: landscape) {
+  .nav-item a {
+    background-color: #09112e;
+    text-align: center;
+    position: relative;
+    right: 220px;
+  }
+  .hero-text .txt {
+    font-size: 1.5rem;
+  }
+  .mySlides .img {
+    width: 250px !important;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1167,7 +1240,7 @@ button::after {
   }
   .imgCont {
     flex: 1;
-    height: 500px;
+    height: 380px;
     justify-content: center;
     /* border: red solid 3px; */
     padding: 20px 40px;
