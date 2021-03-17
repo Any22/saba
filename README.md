@@ -7,7 +7,7 @@ HTML5, CSS3, Bootstrap4, jQuery and vanilla JavaScript.
 ### Website Layout 
     *Responsive 
 
-![alt text](https://github.com/saba-akhtar.github.io/image/profile.jpg) 
+![alt text](https://github.com/Any22/saba-akhtar.github.io/blob/image/profile.jpg) 
 
 ## Author
 Saba Akhtar  
