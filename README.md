@@ -1,4 +1,4 @@
-# My Prtfolio
+# My Portfolio
 This is my portfolio page ,designed to showcase my technical skills, assignments, peojects, and contact information.
 
 ## Build with
