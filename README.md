@@ -1,5 +1,5 @@
-# Profile Page
-This is my portfolio page ,designed to showcase my technical skills, work, and contact information.
+# My Portfolio
+This is my portfolio page ,designed to showcase my technical skills, assignments, projects, and contact information.
 
 ## Build with
 HTML5, CSS3, Bootstrap4, jQuery and vanilla JavaScript.
