@@ -6,8 +6,8 @@ This is my portfolio, designed to showcase my technical skills, assignments, pro
 ### HTML5
 - Nav Element
   It represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.
-- Footer Elemnet 
-  It is present at the bottom of the webpage . It contains social media links , some navigational items and copyright information. 
+- Footer Element 
+  It is added at the bottom of the webpage . It contains social media links , some navigational items and copyright information. 
 - Section Element
   It helps to organize webpage content into thematic groups.
   
@@ -27,9 +27,10 @@ This is my portfolio, designed to showcase my technical skills, assignments, pro
 
 
 
-### Bootstrap4 jQuery and vanilla JavaScript.
+### Bootstrap4
+### jQuery .
 
-### Website Layout 
+### Layout 
     - Responsive 
 
 ![alt text](https://github.com/Any22/saba-akhtar.github.io/blob/master/image/profile.jpg?raw=true) 
