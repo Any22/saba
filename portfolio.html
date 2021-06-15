@@ -7,13 +7,11 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="heroimg.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Saba Akhtar</title>
   </head>
   <body>
@@ -116,7 +114,7 @@
           </button>
           <button type="button" id="button2" class="btn btn-success">
             <a href="image/Saba-Resume.docx" download>
-              <span> Download CV</span>
+              <span>Download CV</span>
             </a>
           </button>
         </div>
@@ -167,41 +165,46 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides">
           <div class="numbertext"></div>
-          <img src="image/html.jpg" />
+          <img src="image/html.jpg" src="HTML" />
         </div>
         <div class="mySlides">
           <div class="numbertext"></div>
-          <img src="image/cs3.jpg" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext"></div>
-          <img src="image/bootstrap.jpg" />
+          <img src="image/cs3.jpg" src="css3" />
         </div>
 
         <div class="mySlides">
           <div class="numbertext"></div>
-          <img src="image/javascript.jpg" alt="" />
+          <img src="image/bootstrap.jpg" alt="bootstrap" />
         </div>
 
         <div class="mySlides">
           <div class="numbertext"></div>
-          <img src="image/npm.jpg" alt="" />
+          <img src="image/javascript.jpg" alt="JavaScript" />
         </div>
 
         <div class="mySlides">
           <div class="numbertext"></div>
-          <img src="image/github.jpg" alt="" />
+          <img src="image/npm.jpg" alt="Npm" />
         </div>
 
         <div class="mySlides">
           <div class="numbertext"></div>
-          <img src="image/jest.jpg" alt="" />
+          <img src="image/github.jpg" alt="Github" />
         </div>
 
         <div class="mySlides">
           <div class="numbertext"></div>
-          <img src="image/api.jpg" alt="" />
+          <img src="image/jest.jpg" alt="Jest" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <img src="image/api.jpg" alt="API" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <img src="image/reactjs.jpeg" alt="react" />
         </div>
 
         <!-- Next and previous buttons -->
@@ -219,6 +222,7 @@
           <span class="dot" onclick="currentSlide(6)"></span>
           <span class="dot" onclick="currentSlide(7)"></span>
           <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
         </div>
       </div>
     </div>
@@ -256,7 +260,7 @@
                     <span class="close">&times;</span>
                     <p>
                       This is my portfolio page which is designed to showcase my
-                      projects, my current tech stack and contact details.
+                      projects,current tech stack and contact details.
                     </p>
                   </div>
                 </div>
@@ -272,22 +276,20 @@
           <div class="card mb-4">
             <img
               class="card-img-top img-fluid"
-              src="image/covid.jpg"
-              alt="companyprofile"
+              src="image/taskplanner.jpg"
+              alt="taskplanner"
               width="500"
               height="400"
             />
             <div class="card-body">
-              <h4 class="card-title">Clinic</h4>
+              <h4 class="card-title">Plan your day</h4>
               <p class="glow">
-                Under contruction, Build with HTML5, CSS3, Bootstarp4,
-                JavaScript and RestAPI
+                Build with HTML5, CSS3, JavaScript ES6 and Web storage API.
               </p>
-              <!-- https://any22.github.io/Clinic/src/clinic.html -->
               <p class="card-text"></p>
               <section>
                 <a
-                  href="projects/Clinic/src/clinic.html"
+                  href="https://daily-planning-buddy.netlify.app/"
                   class="btn btn-primary"
                   ><span>Demo</span>
                 </a>
@@ -297,13 +299,13 @@
                   <div class="modal-content">
                     <span class="close1">&times;</span>
                     <p>
-                      A web application used to demostrate the booking system of
-                      a clinic and shows the latest global and local data of
-                      Covid-19 cases.
+                      This is a simple web application to help you in organizing
+                      your daily routine by maintaining the important "To-do",
+                      "In progress", "Review" and "Done" tasks.
                     </p>
                   </div>
                 </div>
-                <br /><a href="https://github.com/Any22/Clinic"
+                <br /><a href="https://github.com/Any22/myDailyPlanner"
                   ><small class="text-muted">GitHub link</small></a
                 >
               </section>
@@ -318,19 +320,20 @@
           <div class="card mb-4">
             <img
               class="card-img-top img-fluid"
-              src="image/taskplanner.jpg"
+              src="image/covid.JPG"
               alt="taskplanner"
               width="500"
-              height="400"
+              height="300"
             />
             <div class="card-body">
-              <h4 class="card-title">Plan your day</h4>
+              <h4 class="card-title">Covid-19 updates</h4>
               <p class="card-text">
-                Build with HTML5, CSS3, JavaScript ES6 and Web storage API.
+                Build with HTML5, CSS3, Bootstarp4, JavaScript ES6 and RestAPI
+                Integration.
               </p>
               <section>
                 <a
-                  href="https://daily-planning-buddy.netlify.app/"
+                  href="projects/covid-updates/index.html"
                   class="btn btn-primary"
                   ><span>Demo</span></a
                 >
@@ -340,13 +343,12 @@
                   <div class="modal-content">
                     <span class="close2">&times;</span>
                     <p>
-                      This Web application helps you to organize your daily
-                      routine by maintaining your "To-do", "In progress", "Done"
-                      and "Review" tasks.
+                      A web application which helps to trace the latest global
+                      and local data summmary of Covid-19 cases.
                     </p>
                   </div>
                 </div>
-                <br /><a href="https://github.com/Any22/myDailyPlanner"
+                <br /><a href="https://github.com/Any22/covid-updates"
                   ><small class="text-muted">GitHub link</small></a
                 >
               </section>
@@ -383,12 +385,13 @@
                   <div class="modal-content">
                     <span class="close3">&times;</span>
                     <p>
-                      The website demonstrate a generic layout , which can be
-                      customized for any kind of Business
+                      This website demonstrates a generic layout, which can be
+                      customized for any kind of Business.
                     </p>
                   </div>
                 </div>
-                <br /><a href="https://github.com/Any22/React-apps"
+                <br /><a
+                  href="https://github.com/Any22/Any22.github.io/tree/master/v%26p"
                   ><small class="text-muted">GitHub link</small></a
                 >
               </section>
@@ -401,19 +404,19 @@
           <div class="card mb-4">
             <img
               class="card-img-top img-fluid"
-              src="image/validation.jpg"
+              src="image/appointment.jpg"
               alt="validation"
               width="500"
               height="400"
             />
             <div class="card-body">
-              <h4 class="card-title">Form Validation</h4>
+              <h4 class="card-title">Appointnment Planner</h4>
               <p class="card-text">
-                Build with HTML5, CSS3 and vanilla JavaScript.
+                Build with HTML5, CSS3, JavaScript ES6 and React.js.
               </p>
               <section>
                 <a
-                  href="projects/form-validation/contact.html"
+                  href="https://lucitemple.github.io/react-challenge-start/"
                   class="btn btn-primary"
                   ><span>Demo</span></a
                 >
@@ -423,18 +426,14 @@
                   <div class="modal-content">
                     <span class="close4">&times;</span>
                     <p>
-                      This is to Demonstarte form validation which prevents the
-                      user to submit the form empty or with incorrect data
-                      formats<br />
-                      The aim is to prevent a form from submission if it with:
-                      empty Input text <br />In-appropriate length of input
-                      <br />
-                      and last but not least Date validation is also included.
+                      It is a basic appointment making app that: adds contacts
+                      (name, email, phone) displays contacts adds appointments
+                      (contact, date, time) displays appointments.
                     </p>
                   </div>
                 </div>
                 <br /><a
-                  href="https://github.com/Any22/saba-akhtar.github.io/tree/master/projects/form-validation"
+                  href="https://github.com/lucitemple/react-challenge-start"
                   ><small class="text-muted">GitHub link</small></a
                 >
               </section>
