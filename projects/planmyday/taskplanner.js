@@ -102,11 +102,10 @@ class Card {
             //     } 
             //   }
             //   }
-
                 displayTask(){
                   this.master.innerHTML ="";                                           //refreshing page content 
                   let mynewtasks= JSON.parse(localStorage.getItem("mytasks"));   
-                   this.cardArr=mynewtasks;
+                  this.cardArr=mynewtasks;
                 
                 for (let i=0 ; i<mynewtasks.length ; i++){
                              const nCard = new Card (mynewtasks[i].id,
@@ -135,6 +134,30 @@ class Card {
           // });
 
           //    }
+          displayStatus(selectedStatus) {
+        // let today = new Date();
+        // var tskDate = new Date("2020-08-29");
+        // console.log(today);
+        // console.log(tskDate);
+        // if(tskDate.getDate() === today.getDate() && tskDate.getMonth() ===today.getMonth() && tskDate.getFullYear() === today.getFullYear()){
+        // console.log("You are in Today");
+        // }
+        let taskElementByStatus;
+        this.master.innerHTML = "";
+        if(selectedStatus === "All Tasks"){
+            this.displayTask();
+        }
+        
+
+        this.cardArr.forEach((nCard) => {
+            if (nCard.stat === selectedStatus){
+             taskElementByStatus = nCard.toElement();
+            this.master.append(taskElementByStatus);
+            }
+          
+        });
+        
+    }
 
               // displayFilter(taskBs){
               // this.master.innerHTML="";
@@ -183,6 +206,7 @@ addButton.onclick = function(){
   if (validname && validdes && validassignee && checkvalidDate){
       cardDeck.addcard(tname.value,tdes.value,assignee.value,dDate.value,sTatus.value);
       location.reload();
+      // window.onload(cardDeck.displayTask);
       cardDeck.displayTask();
        $("#myModal").modal("hide");
       resetFields();  
@@ -331,7 +355,31 @@ function datevalidation (dateElement,errorElement){
         cardDeck.deletFunc(retreiveId);
         cardDeck.displayTask();
         }
- 
+
+let sel= document.getElementById("#editTaskStatus");
+let cost=sel.options[sel.selectedIndex].text;
+console.log(cost);
+// const statusInprogress = document.querySelector("In Progress"); // Inprogress tasks
+// statusInprogress.addEventListener("click", byStatus);
+
+// const statusTodo = document.querySelector("#todo"); // To Do tasks
+// statusTodo.addEventListener("click", byStatus);
+
+// const statusReview = document.querySelector("#review"); // Review tasks
+// statusReview.addEventListener("click", byStatus);
+
+// const statusDone = document.querySelector("#done"); // Done tasks
+// statusDone.addEventListener("click", byStatus);
+
+// const statusAll = document.querySelector("#allTask"); // All tasks 
+// statusAll.addEventListener("click", byStatus);
+function byStatus(event){
+ let selectedStatus = event.target.value;
+console.log(selectedStatus);
+ cardDeck.displayByStatus(selectedStatus);
+}
+
+
         // displaying by status
         // const todo =   document.querySelector("#toDo");
         // todo.addEventListener("click", statusSel);
