@@ -23,6 +23,7 @@
       <div class="covidTxt">
         <span><i class="fa fa-exclamation-triangle"></i></span>
         <h3>Covid Updates</h3>
+        <p class="update-info"></p>
         <br />
         <!-- Global cases -->
         <div class="showResponse">
@@ -42,7 +43,6 @@
               <div id="newRecoveredFigure">0</div>
             </div>
           </div>
-          <div class="divGap"></div>
           <!-- Australia  -->
           <div class="ozCase">
             <h4>Australian Data</h4>
@@ -60,21 +60,22 @@
               <div id="oZResponse2"></div>
             </div>
           </div>
-          
-          <label>Choose a state:
-          <select class="state-select" name="states" >
-              <option value="">--Please choose an option--</option>
-              <option value="AustralianCapitalTerritory">Australian Capital Territory</option>
-              <option value="NewSouthWales">New South Wales</option>
-              <option value="NorthernTerritory">Northern Territory</option>
-              <option value="Queensland">Queensland</option>
-              <option value="SouthAustralia">South Australia</option>
-              <option value="Tasmania">Tasmania</option>
-              <option value="Victoria">Victoria</option>
-              <option value="WesternAustralia">Western Australia</option>
-          </select>
-          </label>
-            <div class="result"></div>
+        </div>
+        <!-- Total cases -->
+        <div class="totalCases">
+          <h4>Total</h4>
+          <label>Confirmed </label>
+          <div class="totalConfirmed">
+            <div id="totalConfirmedFigure"></div>
+          </div>
+          <label>Deaths</label>
+          <div class="totaldeaths">
+            <div id="tdeaths"></div>
+          </div>
+          <label>Recovered</label>
+          <div class="totalRecovered">
+            <div id="totalRecoveredFigure"></div>
+          </div>
         </div>
       </div>
     </div>

@@ -58,6 +58,7 @@ function topFunction() {
 }
 
 //Modal to show project details 
+const modall = document.getElementById("myModall");
 const modal = document.getElementById("myModal");
 const modal1 = document.getElementById("myModal1");
 const modal2 = document.getElementById("myModal2");
@@ -66,6 +67,7 @@ const modal4 = document.getElementById("myModal4");
 const modal5 = document.getElementById("myModal5");
 
 // "Details" button that opens the modal
+const btnn = document.getElementById("detailBtnn");
 const btn = document.getElementById("detailBtn");
 const btn1 = document.getElementById("detailBtn1");
 const btn2 = document.getElementById("detailBtn2");
@@ -74,6 +76,7 @@ const btn4 = document.getElementById("detailBtn4");
 const btn5 = document.getElementById("detailBtn5");
 
 // Get the <span> element that closes the modal
+const spann = document.getElementsByClassName("closee")[0];
 const span = document.getElementsByClassName("close")[0];
 const span1 = document.getElementsByClassName("close1")[0];
 const span2 = document.getElementsByClassName("close2")[0];
@@ -82,6 +85,9 @@ const span4 = document.getElementsByClassName("close4")[0];
 const span5 = document.getElementsByClassName("close5")[0];
 
 // When the user clicks on the button, open the modal
+btnn.onclick = function() {
+  modall.style.display = "block";
+}
 btn.onclick = function() {
   modal.style.display = "block";
 }
@@ -107,6 +113,9 @@ btn5.onclick = function() {
 
 
 // When the user clicks on <span> (x), close the modal
+spann.onclick = function() {
+  modall.style.display = "none";
+}
 span.onclick = function() {
   modal.style.display = "none";
 }
@@ -131,6 +140,11 @@ span5.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modall.style.display = "none";
+  }
+}
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";

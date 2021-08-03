@@ -17,7 +17,7 @@ html {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/covid19.jpg");
+  background-image: url("./image/covid19.jpg");
   width: 100%;
   min-height: 500px;
   background-position: center;
@@ -53,49 +53,32 @@ html {
 }
 .cases {
   flex: 1;
-  width: 50vw; 
+  width: 50vw;
   line-height: 10px;
-  /* background-color:#466D1D; */
-  /* border : #466D1D solid 2px; */
-  border-radius:20px 10px;
-  padding-top:40px ;
-  padding-bottom:40px;
-  margin-left:90px;  
-  
- 
+  padding-left: 100px;
   box-sizing: border-box;
 }
 .cases h4 {
-  position: relative;
-  left: 50px;
+  text-align: center;
 }
 .cases label {
   position: relative;
-  right: 250px;
-}
-.divGap{
-width:100px;
+  left: 150px;
 }
 .ozCase {
   flex: 1;
   width: 50vw;
   line-height: 14px;
-  padding-left: 100px; 
-  /* background-color:#466D1D; */
-  /* border : #466D1D solid 2px; */
-  border-radius:20px 10px;
-  padding-top:40px ;
-  padding-bottom:40px ;
-  margin-right:80px;
+  padding-left: 100px;
 }
-/* .ozCase h4 {
+.ozCase h4 {
   position: relative;
   left: 50px;
-} */
-/* .ozCase label {
+}
+.ozCase label {
   position: relative;
   left: 400px;
-} */
+}
 .confirmedCases,
 .newDeaths,
 .newRecovered {
@@ -144,14 +127,14 @@ width:100px;
     flex: 1;
     width: 50vw;
     line-height: 10px;
-    /* padding-left: 60px; */
+    padding-left: 60px;
     box-sizing: border-box;
   }
   .ozCase {
     flex: 1;
     width: 50vw;
     line-height: 14px;
-    /* padding-left: 60px; */
+    padding-left: 60px;
   }
   .totalCases {
     width: 100vw;
@@ -269,54 +252,43 @@ width:100px;
 @media only screen and (min-width: 1200px) {
   .showResponse {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 100vw;
     height: 550px;
-    
   }
   .cases {
     flex: 1;
+    width: 50vw;
     line-height: 10px;
+    padding-left: 100px;
     box-sizing: border-box;
   }
-  .ozCase {
-    flex: 1;
-    line-height: 10px;
-    box-sizing: border-box;
-  
+  .cases h4 {
+    text-align: center;
   }
-   .cases h4 {
-    position:relative;
-    left:170px;
-  }
-  .ozCase h4 {
-    position:relative;
-    left:170px 
-  }
-  /* .cases label {
+  .cases label {
     position: relative;
     left: 150px;
-  } */
+  }
   .confirmedCases,
   .newDeaths,
   .newRecovered {
     position: relative;
     bottom: 18px;
-    /* left: 350px; */
+    left: 350px;
   }
-  .newConfirmedOz,
-  .newDeathsOz,
-  .newRecoveredOz{
+  .totalCases label {
     position: relative;
-    bottom: 18px; 
-    left :320px;
+    left: 180px;
   }
-  .ozCase label{
+  .totalConfirmed,
+  .totaldeaths,
+  .totalRecovered {
     position: relative;
-     bottom: 18px;  
-    left :120px;
+    bottom: 18px;
+    left: 350px;
   }
 }
