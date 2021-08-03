@@ -24,7 +24,7 @@ const target2=newRecovered;
 const target3=TotalConfirmed;
 const target4=TotalDeaths;
 const target5=TotalRecovered;
-document.querySelector("update-info").innerText=d.getDate;
+
 const count= document.getElementById("confirmedCasesFigure").innerText;
 const count1= document.getElementById("newDeathsFigure").innerText;
 const count2=document.getElementById('newRecoveredFigure').innerText;
@@ -65,9 +65,7 @@ const getOzData = () =>{
   const newConfirmedAustralia= newArray[0].NewConfirmed;
   const newDeathsAustralia = newArray[0].NewDeaths;
   const newRecoveredAustralia = newArray[0].NewRecovered;
-  const d=new Date();
-  console.log(d.getDate());
- document.querySelector("update-info").innerHTML=d.getDate;
+  
  document.getElementById('oZResponse').innerHTML=newConfirmedAustralia;
  document.getElementById('oZResponse1').innerHTML=newDeathsAustralia;
  document.getElementById('oZResponse2').innerHTML=newRecoveredAustralia;      
