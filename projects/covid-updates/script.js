@@ -55,27 +55,33 @@ const getOzData = () =>{
  document.getElementById('oZResponse').innerHTML=newConfirmedAustralia;
  document.getElementById('oZResponse1').innerHTML=newDeathsAustralia;
  document.getElementById('oZResponse2').innerHTML=newRecoveredAustralia;  
- 
 
 ozStateSelect.addEventListener("change", (event)=>
 {
-  const ozStates=["Australian Capital Territory", "New South Wales", "Northern Territory", "Queensland",
-"South Australia","Tasmania","Victoria","Western Australia"];
-  const result = document.querySelector('.result');
-  // result.textContent = `Cases in ${event.target.value}`;
-  const stateName=event.target.value;
-console.log(stateName.toString());
-// console.log(data.Australia..confirmed);
-  console.log(data.Australia.AustralianCapitalTerritory.confirmed);
-   if(stateName===ozStates[0])
-   {
+ const states= document.getElementById("states").value  ;
+//  const result = document.querySelector('.result');
+//  result.textContent = `Cases in ${event.target.value}`;
+ const stateName=event.target.value;
+ console.log(stateName); 
+ document.getElementById("state-name").innerHTML = stateName;
+ console.log(states);
  
-    result.textContent=data.ozStates[0].confirmed;
-   }
-
+  if (states === event.target.value)
+  {
+    console.log(data["Australia"][stateName]["confirmed"]);
+    document.getElementById("confirmedFigure").innerHTML = data["Australia"][stateName]["confirmed"];
+    console.log(data["Australia"][stateName]["deaths"]);
+    document.getElementById("deaths").innerHTML =data["Australia"][stateName]["deaths"];
+    console.log(data["Australia"][stateName]["recovered"]);
+    document.getElementById("recoveredFigure").innerHTML =data["Australia"][stateName]["recovered"];
+  }
+  else 
+    console.log("not avaialble");
 });    
 }
+
 getOzData();
+
 };
 
 getdata();
