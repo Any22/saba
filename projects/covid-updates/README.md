@@ -1,3 +1,4 @@
+## Covid Tracker
 - A web application to fetch and demostrate the latest global and local(Australian) data of Covid-19 cases.
 
 ## Existing Functionality 
