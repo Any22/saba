@@ -131,8 +131,6 @@ new Chart("myChart1", {
     }
   }
 });
-// ausdata
-// }
 
 }
 
@@ -142,6 +140,9 @@ const bounce= () => {
 $(".newRecovered").addClass("animated bounce");
 $(".newRecoveredOz").addClass("animated bounce");
 $(".totalRecovered").addClass("animated bounce");
+$(".oZResponse").addClass("animated bounce");
+$(".oZResponse1").addClass("animated bounce");
+$(".oZResponse2").addClass("animated bounce");
 }
 setTimeout(bounce,1000);
 

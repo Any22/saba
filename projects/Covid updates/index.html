@@ -15,34 +15,46 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css"/>  
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
     <title>Covid Updates</title>
   </head>
   <body>
+    <div class="header-div">
+    <p class="header-info">Coronavirus Hotline <i class="fas fa-phone"></i> 1800 675 398 </p>
+    </div>
     <h2 class="mainHeading">Covid Updates</h2>
     <br/>
+    <br/>
     <div id ="main-container">
-        <!-- <div id="taskcontainer"> -->
-            <div id ="cList" class="card"> 
-              <h4 class="globalData">Global Data</h4>
-              <br />
-                <label>Total Confirmed Cases<p id="confirmedCasesFigure">0</p></label>
-                <label>Total Deaths<p id="newDeathsFigure">0</p></label>
-                <label>Total Recovered Cases<p id="newRecoveredFigure">0</p></label> 
-            </div>
-            <br/>
-            <div id ="cList1" class="card"> 
-              <h4 class="australianData">Australian Data</h4>
-                <label>Total Confirmed Cases<p id="oZResponse"></p></label>
-                <label>Total Deaths<p id="oZResponse1"></p></label>
-                <label>Total Recovered<p id="oZResponse2"></p></label>
-            </div> 
+      <div id ="cList" class="card"> 
+          <h4 class="globalData">Global Data</h4>
+            
+            <p id="confirmedCasesFigure">0</p>
+            <label>Total Confirmed Cases</label><br/>
+            <p id="newDeathsFigure">0</p>
+            <label>Total Deaths</label> <br/>
+            <p id="newRecoveredFigure">0</p>
+            <label>Total Recovered Cases</label> 
+      </div>
+      <div class="gap"></div>
+      <br/>
+      <div id ="cList1" class="card"> 
+          <h4 class="australianData">Australian Data</h4>
+            
+            <p id="oZResponse">0</p>
+            <label>Total Confirmed Cases</label><br/>
+            <p id="oZResponse1">0</p>
+            <label>Total Deaths</label><br/>
+            <p id="oZResponse2">0</p>
+            <label>Total Recovered</label>
+      </div> 
       <!-- Australian States data  -->
+      <div class="gap"></div>
           <br/>
           <div id ="cList2" class="card">
-            <div class="color-div"></div>
-            <br/>
-             <label>Choose a State: 
+            <div class="color-div"><h4>Australian States</h4></div><br/>
+             <label>
               <select class="state-select" id="states" name="states" >
                   <option value="">--Choose a State--</option>
                   <option value="Australian Capital Territory">Australian Capital Territory</option>
@@ -59,14 +71,17 @@
               <select class="state-select" id="states" name="states" >
                   <option value="">--Please choose a state --</option>
               </select>  -->
-             <h4 id="state-name"></h4> 
-            <label>Confirmed Cases<p id="confirmedFigure">0</p></label>
-            <label>Deaths<p id="deaths">0</p></label>
-            <label>Recovered <p id="recoveredFigure">0</p></label>
-        </div> 
-        <!-- </div> -->
+             <h6 id="state-name"></h6> 
+             <p id="confirmedFigure">0</p>
+            <label>Confirmed Cases</label>
+            <p id="deaths">0</p>
+            <label>Deaths</label>
+            <p id="recoveredFigure">0</p>
+            <label>Recovered </label>
+        </div>
     </div>
   <!-- Charts  -->
+  <br/>
   <div class="chart-container">
     <div class="gap"></div>
     <div class="chart-one">
