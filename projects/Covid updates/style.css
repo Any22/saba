@@ -69,7 +69,7 @@
   }
   .color-div{
     height:29px;
-    width:236px;
+    width:238px;
     color:#000000;
    background-color:#ECB22E;
   }
@@ -259,6 +259,13 @@
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
+      }
+      #cList2{
+        width:250px;
+        height:372px;
+      }
+      .color-div{
+        width:247px;
       }
     .chart-container {
       display: flex;
