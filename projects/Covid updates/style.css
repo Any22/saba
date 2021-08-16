@@ -311,6 +311,9 @@
       padding-top:10px ;  
       
   }
+  .gap{
+    height:40px;
+  }
     #main-container {
         display: flex;
         flex-direction: column;
@@ -343,10 +346,13 @@
         margin: auto;
         box-sizing: border-box;
       }
-      .gap{
-        /* width:60px; */
-        height:80px;
+      #myChart1{
+        margin-top: 80px;
       }
+      /* .gap{ */
+        /* width:60px; */
+        /* height:80px; */
+      /* } */
 
   }
   @media only screen and (min-width: 992px) {
@@ -368,6 +374,16 @@
   }
   
   @media only screen and (min-width: 1200px) {
+    .header-info{
+      position:relative;
+      left:940px;
+      padding-top:10px ;    
+  }
+  .header-info p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  
+  }
     #main-container {
         display: flex;
         flex-direction: row;
@@ -391,5 +407,8 @@
       padding: 10px 20px;
       margin: auto;
       box-sizing: border-box;
+    }
+    #myChart1{
+      margin-top: 0px;
     }
   }

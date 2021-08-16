@@ -110,8 +110,8 @@ new Chart("myChart", {
     legend: {display:false},
     title: {
       display: true,
-      text: "Total recoverd cases",
-      fontSize:15,
+      text: "Total recovered cases",
+      fontSize:17,
       fontColor: "white",
     
     }
