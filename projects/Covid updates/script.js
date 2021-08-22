@@ -1,3 +1,20 @@
+// changes background color
+let button1=document.querySelector("#button1");
+button1.onclick = function(){
+    document.getElementById("bd").style.backgroundColor = "#fff2b5";
+    document.getElementById("button1").style.backgroundColor="#fff2b5";
+    document.getElementById("button1").style.color = "#ffffff";
+    document.getElementById("button1").style.border = "#ffffff";
+    document.getElementById("ch-1").style.color = "#25272A";  
+    document.getElementById("ch-2").style.color = "#25272A";                                 
+    document.getElementById("button2").style.backgroundColor="#000000";
+    document.getElementById("button2").style.color = "#ffffff";
+    document.querySelector("h2").style.color="#25272A";
+    }
+let button2=document.querySelector("#button2");
+button2.onclick = function(){
+ location.reload();
+}
 // fetching the data 
 const dbutton= document.getElementById('resbtn');
 const requestOptions = {
@@ -93,10 +110,25 @@ const ozStateSelect=document.querySelector(".state-select");
 let xValues1 = ["ACT", "NSW", "NT", "QLD", "SA","TAS","VIC","WA"];
 let yValues = [data1, data2, data3, data4, data5,data6,data7,data8];
 let yValues1 = [deathData, deathData1,deathData2, deathData3, deathData4,deathData5,deathData6,deathData7];
-let barColors = ["#36C5F0","#36C5F0","#36C5F0","#36C5F0","#36C5F0","#36C5F0","#36C5F0","#36C5F0","#f4c20"];
-let barColors1 = ["red","#0F52BA","#E79AFF"," #f4c20d","#fb7e84","red","skyblue","#8ab48a","#fb7e84"];
+let barColors = ["#4FC1E8","#A0D568","#AC92EB","#FFCE54","#8FE968","#36C5F0","#ED5564","#FFB750"];
+let barColors1 =["#4FC1E8","#A0D568","#AC92EB","#FFCE54","#8FE968","#36C5F0","#ED5564","#FFB750"];
+
  console.log(data1);
- 
+//  new Chart("myChart", {
+//   data: {
+//       datasets: [{
+//           type: 'bar',
+//           label: xValues1,
+//           data: yValues,
+//       }, {
+//           type: 'line',
+//           label: 'Population',
+//           data: [50, 50, 50, 50],
+//       }],
+//       labels: ['January', 'February', 'March', 'April']
+//   },
+//   options: options
+// });
 new Chart("myChart", {
   type: "bar",
   data: {
@@ -110,7 +142,7 @@ new Chart("myChart", {
     legend: {display:false},
     title: {
       display: true,
-      text: "Total recovered cases",
+      // text: "Total recovered cases",
       fontSize:17,
       fontColor: "white",
     
@@ -130,7 +162,7 @@ new Chart("myChart1", {
   options: {
     title: {
       display: true,
-      text: "Total deaths",
+      // text: "Total deaths",
       fontSize:20,
       fontColor: "white",
     }

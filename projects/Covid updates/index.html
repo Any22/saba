@@ -19,15 +19,20 @@
     <!-- <link rel="stylesheet" href="./style.css" /> -->
     <title>Covid Updates</title>
   </head>
-  <body>
+  <body id="bd">
     <div class="header-div">
     <p class="header-info">Coronavirus Hotline <i class="fas fa-phone"></i> 1800 675 398 </p>
     </div>
+    <div class="btn-group">
+      <button type="button" id="button1" class="btn btn-success"><i class="fa fa-sun-o" aria-hidden="true"></i></button>
+      <button type="button" id="button2" class="btn btn-success"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
+    </div>
+    <!-- <label class="modes-class">modes</label> -->
     <h2 class="mainHeading">Covid Updates</h2>
     <br/>
     <br/>
     <div id ="main-container">
-      <div id ="cList" class="card"> 
+      <div id ="cList" class="card mb-3"> 
           <h4 class="globalData">Global Data</h4>
             
             <p id="confirmedCasesFigure">0</p>
@@ -39,7 +44,7 @@
       </div>
       <div class="gap"></div>
       <br/>
-      <div id ="cList1" class="card"> 
+      <div id ="cList1" class="card mb-3"> 
           <h4 class="australianData">Australian Data</h4>
             
             <p id="oZResponse">0</p>
@@ -52,7 +57,7 @@
       <!-- Australian States data  -->
       <div class="gap"></div>
           <br/>
-          <div id ="cList2" class="card">
+          <div id ="cList2" class="card mb-3">
             <div class="color-div"><h4>Australian States</h4></div><br/>
              <label>
               <select class="state-select" id="states" name="states" >
@@ -85,11 +90,13 @@
   <div class="chart-container">
     <div class="gap"></div>
     <div class="chart-one">
+      <label class="chart1" id="ch-1">Total recovered cases</label>
       <canvas id="myChart"></canvas>
     </div>
     <div class="gap"></div>
     <br/>
     <div class="chart-two">
+      <label class="chart2" id="ch-2">Total Deaths</label>
       <canvas id="myChart1"></canvas>
     </div>
    </div>
