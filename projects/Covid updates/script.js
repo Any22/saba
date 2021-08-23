@@ -1,8 +1,24 @@
 // changes background color
 let button1=document.querySelector("#button1");
 button1.onclick = function(){
+  // #fff2b5
     document.getElementById("bd").style.backgroundColor = "#fff2b5";
     document.getElementById("button1").style.backgroundColor="#fff2b5";
+    document.getElementById("hDivision").style.backgroundColor="#289e80";
+    document.getElementById("cList").style.backgroundColor="#289e80";
+    document.getElementById("cList").style.color="#000000";
+    document.getElementById("cList1").style.color="#000000";
+    document.getElementById("cList2").style.color="#000000";
+    document.getElementById("cList1").style.backgroundColor="#289e80";
+    document.getElementById("cList2").style.backgroundColor="#289e80";
+    $("#cList").hide();
+    $("#cList1").hide();
+    $("#cList").show(1000);
+    $("#cList1").show(2000);
+    document.getElementById("gData").style.backgroundColor="#ECB22E";
+    document.getElementById("gData").style.color="#000000";
+    document.getElementById("oZdata").style.backgroundColor="#ECB22E";
+    document.getElementById("oZdata").style.color="#000000"
     document.getElementById("button1").style.color = "#ffffff";
     document.getElementById("button1").style.border = "#ffffff";
     document.getElementById("ch-1").style.color = "#25272A";  
@@ -15,6 +31,10 @@ let button2=document.querySelector("#button2");
 button2.onclick = function(){
  location.reload();
 }
+$("#cList").hide();
+    $("#cList1").hide();
+    $("#cList").show(1000);
+    $("#cList1").show(2000);
 // fetching the data 
 const dbutton= document.getElementById('resbtn');
 const requestOptions = {
